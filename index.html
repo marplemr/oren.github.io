@@ -1,63 +1,131 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Oren's website : " />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
     <title>Oren's website</title>
+
+    <meta name="description" content="Oren's Website">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+
+    <!-- <link rel="shortcut icon" href="public/images/favicon.ico"> -->
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css" rel="stylesheet">
+    <!-- <link href="public/vendor/font-awesome/css/font-awesome.css" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="app.css"> -->
   </head>
 
   <body>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/oren">View on GitHub</a>
+    <!-- Main content -->
+    <div id="site-content-body" class="container">
+      <div class="hero-unit">
+        <!-- <img src="oren_golan.png" title='me'> -->
+        <a class="github2" href="http://www.github.com/oren" title="Github page">
+          <span class="icon-github"></span>
+          Github
+        </a>
+      </div>
 
-          <h1 id="project_title">Oren's website</h1>
-          <h2 id="project_tagline"></h2>
 
-        </header>
+      <div class="row-fluid">
+        <div class="pull-left span6">
+          <h2>Blog Posts!</h2>
+
+          <ul class="unstyled posts">
+            <li>
+              <a href="https://github.com/oren/node-website-template">A Template for a Node.js Website/Web Service</a>
+            </li>
+            <li>
+              <a href="http://engineering.yp.com/post/nodeconf">NodeConf 2013 Video</a>
+            </li>
+            <li>
+              <a href="https://github.com/oren/oren.github.com/blob/master/posts/tape/tape.md">Client and Server test looks the same with Tape and Browserify</a>
+            </li>
+            <li>
+              <a href="https://github.com/oren/oren.github.com/blob/master/posts/the-substack-pattern.md">The Substack Pattern</a>
+            </li>
+            <li>
+              <a href="https://github.com/oren/oren.github.com/blob/master/posts/leveldb.md">LevelDB</a>
+            </li>
+            <li>
+              <a href="https://github.com/oren/oren.github.com/blob/master/posts/sublevel.md">Creating table-like structure in LevelDB with sublevel</a>
+            </li>
+            <li>
+              <a href="https://github.com/oren/oren.github.com/blob/master/posts/pretty-readme.md">Turn your Readme.md page into a pretty website</a>
+            </li>
+            <li>
+              <a href="https://github.com/oren/oren.github.com/blob/master/posts/control-flow-2.md">Another Control Flow example</a>
+            </li>
+            <li>
+              <a href="https://github.com/oren/oren.github.com/blob/master/posts/control-flow.md">Control Flow</a>
+            </li>
+            <li>
+              <a href="https://github.com/oren/oren.github.com/blob/master/posts/js-source-analysis.md">Javascript Source Analysis</a>
+            </li>
+            <li>
+              <a href="https://github.com/oren/oren.github.com/blob/master/posts/small-apps.md">Small Apps</a>
+            </li>
+            <li>
+              <a href="https://github.com/oren/oren.github.com/blob/master/posts/node-best-practices.md">Node.js Best Practices</a>
+            </li>
+            <li>
+              <a href="https://github.com/oren/oren.github.com/blob/master/posts/browserify/browserify.md">Organizing client-side JavaScript with Browserify</a>
+            </li>
+            <li>
+              <a href="https://github.com/oren/oren.github.com/blob/master/posts/grunt-in-20.md">Grunt in 20 seconds (version 0.4)</a>
+            </li>
+            <li>
+              <a href="https://github.com/oren/oren.github.com/blob/master/posts/grunt/grunt.md">Turn that "Grunt" upside down!</a>
+            </li>
+            <li>
+              <a href="https://github.com/oren/oren.github.com/blob/master/posts/markdown.md">Preview markdown files locally</a>
+            </li>
+            <li>
+              <a href="https://github.com/oren/oren.github.com/blob/master/posts/benchmark.md">Benchmark your Node.js or Javascript code</a>
+            </li>
+            <li>
+              <a href="https://github.com/oren/oren.github.com/blob/master/posts/deploy.md">Easy and frequent deployment</a>
+            </li>
+            <li>
+              <a href="https://github.com/oren/oren.github.com/blob/master/posts/serve-page/serve.md">Different ways to serve a website</a>
+            </li>
+            <li>
+              <a href="https://github.com/oren/oren.github.com/blob/master/posts/cron.md">Cron jobs made easy with Node</a>
+            </li>
+            <li>
+              <a href="https://github.com/oren/oren.github.com/blob/master/posts/rss.md">What every RSS publisher should do</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="pull-right span6 sidebar">
+          <h2>Presentations</h2>
+
+          <div class='talk'>
+            <p>Node.js or how I learned to stop worrying and love the node</p>
+            <a href="https://github.com/oren/node.js-presentation">code samples</a>
+            <!-- <iframe width="560" height="315" src="http://www.youtube.com/embed/1RW9bxQ1EXI" frameborder="0" allowfullscreen></iframe> -->
+          </div>
+
+          <div class='talk'>
+            <p>Sinatra - The Little Framework that Could</p>
+            <a href="https://github.com/oren/sinatra-examples">code samples</a>
+            <!-- <iframe width="560" height="315" src="http://www.youtube.com/embed/8&#45;zGQn_Fs4k" frameborder="0" allowfullscreen></iframe> -->
+          </div>
+
+          <div class='talk'>
+            <p>Angular.js - HTML on Steroid</p>
+            <a href="http://chicagowebconf2012.sched.org/event/3231b6996ed535e2345a6b2969d2fa81#.UJW-2CHA_mA">Link to Chicago Web Conf</a> (video will be available soon)
+            <br />
+            <a href="https://github.com/oren/angular.js-presentation">code samples</a>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <p><a href="https://github.io/oren/node-website-template">A Template for a Node.js Website/Web Service</a><br><a href="http://engineering.yp.com/post/nodeconf">NodeConf 2013 Video</a><br><a href="https://github.com/oren/oren.github.com/blob/master/posts/tape/tape.md">Client and Server test looks the same with Tape and Browserify</a><br><a href="https://github.com/oren/oren.github.com/blob/master/posts/the-substack-pattern.md">The Substack Pattern</a>  </p>
-
-<pre><code>LevelDB
-Creating table-like structure in LevelDB with sublevel
-Turn your Readme.md page into a pretty website
-Another Control Flow example
-Control Flow
-Javascript Source Analysis
-Small Apps
-Node.js Best Practices
-Organizing client-side JavaScript with Browserify
-Grunt in 20 seconds (version 0.4)
-Turn that "Grunt" upside down!
-Preview markdown files locally
-Benchmark your Node.js or Javascript code
-Easy and frequent deployment
-Different ways to serve a website
-Cron jobs made easy with Node
-What every RSS publisher should do
-</code></pre>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
+    <script src="http://code.jquery.com/jquery-1.8.1.min.js"> </script>
+      
+    <!-- <script src="app.js"></script> -->
   </body>
 </html>
+
