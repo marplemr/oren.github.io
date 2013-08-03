@@ -18,6 +18,6 @@ UserPresenter.prototype = {
 };
 
 var user = new UserPresenter({ name: 'josh', title: 'Sir' });
-var html = jade.renderFile('index2.jade', { user: user });
+var html = jade.renderFile('index.jade', { user: user });
 
 console.log(html);
