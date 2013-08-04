@@ -6,15 +6,15 @@ After a few months of adding features you realize that you have a lot of messy c
 1. The functions that act on the HTTP requests (Express and Sintra calls it a route or a handler and Rails calls it a controller).
 1. The Templates that is being rendered into HTML (Jade, EJS, Haml, ERB etc).
 
-Upon further investigation you discover formatting logic inside your templates and in your routes and also functions that do all kind of computations. Not only it hard to add new features but it's almost impossible to test those functions. That's where Presenters can help. You might heard about MVP (Model-view-presenter) pattern but this is not going to be a discussion about design patterns so look up this term if you are curious. The practical aspect of a Presenter is to encapsulate the UI logic into an object that you pass into your template. Inside the template you'll be able to call functions of the this object.
+Upon further investigation you discover formatting logic inside your templates and in your routes and also functions that do all kind of computations. Not only it's hard to add new features but it's almost impossible to test those functions. That's where Presenters can help. You might heard about MVP (Model-view-presenter) pattern but this is not going to be a discussion about design patterns so look up this term if you are curious. The practical aspect of a Presenter is to encapsulate the UI logic into an object that you pass into your template. Inside the template you'll be able to call functions of the this object.
 
 This pattern also allows developers to work on the UI logic without waiting for the designer to finish their layouts. It's also easy to mock a Presenter if the API for a feature is not ready.
 
-In this post we'll use [jade](https://github.com/visionmedia/jade), but it can apply other template engines es well (such as [ejs](http://embeddedjs.com/)). We'll start with a simple example not related to a website and move on to a hello world express app that uses a Presenter.
+In this post we'll use [jade](https://github.com/visionmedia/jade), but it can apply other template engines es well (such as [ejs](http://embeddedjs.com/)). We'll start with an example of passing a presenter into a jade template and finish with a simple express app.
 
 ## Basic example
 
-**This code example is available [here](https://github.com/oren/oren.github.io/tree/master/posts/presenter/basic-example)**
+*This code example is available [here](https://github.com/oren/oren.github.io/tree/master/posts/presenter/basic-example)*
 
 `npm install jade`
 
@@ -81,7 +81,7 @@ Let's build an express application and use a Presenter with a jade template.
 
 ## Example with express.js
 
-**This code example is available [here](https://github.com/oren/oren.github.io/tree/master/posts/presenter/express-example)**
+*This code example is available [here](https://github.com/oren/oren.github.io/tree/master/posts/presenter/express-example)*
 
 Setup a basic express app:
 
