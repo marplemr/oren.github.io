@@ -1,0 +1,35 @@
+- hosts: web1.example.com
+  sudo: yes
+  tasks:
+
+  - name: install debian packages
+    apt: pkg=$item state=present update_cache=yes
+    with_items:
+    - curl
+    - git-core
+    - vim-gtk
+    - xterm
+    - tmux
+
+  - name: add git user
+    user: name=git
+
+  - name: copy bash_profile
+    template: src=templates/bash_profile dest=/home/oren/.bash_profile mode=0644
+    sudo: no
+
+  - name: clone .dotfiles repo
+    git: repo=git@github.com:oren/dotfiles.git dest=/home/oren/.dotfiles
+    sudo: no
+
+  - name: run symlink-dotfiles
+    command: /home/oren/.dotfiles/debian-server/bin/symlink-dotfiles
+    sudo: no
+
+  - name: clone gitolite repo
+    git: repo=git://github.com/sitaramc/gitolite dest=/home/git/gitolite
+    sudo_user: git
+
+  - name: setup gitolite
+    command: /home/git/bin/gitolite setup -pk /home/git/oren.pub
+    sudo_user: git
