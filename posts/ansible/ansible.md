@@ -14,8 +14,11 @@ source ./hacking/env-setup
 ```
 type `ansible` to verify you have the Ansible command line. You should see the help info.
 
-Note: you'll need python 2.6 or greater with the following modules - pyYAML and jinja2.  
-Read [here](http://www.ansibleworks.com/docs/gettingstarted.html) for your specific OS and use the following for Debian:  
+* * *
+
+Note: You'll need python 2.6 or greater with the following modules - pyYAML and jinja2.  
+Read [here](http://www.ansibleworks.com/docs/gettingstarted.html) for your specific OS.
+If you are on Debian install the following:  
 `sudo aptitude install python-jinja2 python-yaml`  
 `sudo aptitude install sshpass`  # for executing commands with sudo
 
