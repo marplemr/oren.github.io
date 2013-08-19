@@ -10,7 +10,7 @@ Also, there is nothing to configure on your target servers since all it does is 
 ```
 git clone git://github.com/ansible/ansible.git
 cd ansible
-source ./hacking/env-setup
+sudo make install
 ```
 type `ansible` to verify you have the Ansible command line. You should see the help info.
 
