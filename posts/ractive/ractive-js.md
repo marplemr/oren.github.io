@@ -1,3 +1,5 @@
+# Ractive.js
+
 One of the most frustrating parts of writing web apps is DOM manipulation and event handling.
 Let's say we want to hide an element and show another one when a user click on the 'add-note' textbox.
 
@@ -92,7 +94,7 @@ Ractive uses [mustache](http://mustache.github.io/) for it's HTML templates:
 
 Ractive.js is a small library that helps us keep our sanity while working on client-side JavaScript. It offers mainly two features - DOM manipulation and event handling. In our little example above, we added `proxy-click="add"` this allow us to bind the input type to a function. In that function we set the variable `adding` to true. By doing that we hide the DOM that is inside `{{^adding}} ... {{/adding}}` and showing the DOM inside `{{#adding}} ... {{/adding}}`
 
-## When to use it (instead of the 'heavy-weights')?
+## When to use it?
 
 If you are familiar with AngularJS or Ember.js you might be asking yourself why not using them instead?  
 The answer is (as always) - it depends. Let's look at the following:
