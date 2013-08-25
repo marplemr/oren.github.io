@@ -104,8 +104,8 @@ We haven't done formal testing but observed noticable improvement of client-side
 Ember.js and AngularJS are great for a single-page-app. But if your app has a lot of server-side rendering and it spits html to the browser, you might not enjoy many features that the bigger frameworks offer.
 
 ### Modularity
-If all you need is one or two features (in our case it's data binding and event-handling) it might be better to find smaller libraries that ease your pain. AngularJS comes with testing framework, router, data-binding, event handling, dependency injection and more. We don't have a need (at the moment) most of those.
+If all you need is one or two features (in our case it's data binding and event-handling) it might be better to find smaller libraries that ease your pain. AngularJS comes with testing framework, router, data-binding, event handling, dependency injection and more. Right now We don't need many of them.
 
 ### Learning curve
-Ractive.js takes a few hours to learn. You can turn on your HACKER_MODE by `wget -r http://www.ractivejs.org/` and read it on your next flight from LA to Chicago.  
+Ractive.js takes a few hours to learn. Rumors say that it can be learned inside-out on a flight from LA to Chicago.  
 AngularJS will require a few weeks of investment and Ember.js...aham..[good luck with that](http://emberjs.com/blog/2013/03/21/making-ember-easier.html).
