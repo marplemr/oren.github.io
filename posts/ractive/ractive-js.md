@@ -103,10 +103,10 @@ The answer is (as always) - it depends. Let's look at the following:
 We haven't done formal testing but observed noticable improvement of client-side rendering with Ractive.js.
 
 ### Architecture
-Ember.js and AngularJS are great for a single-page-app. If your app using a lot of server-side rendering and spitting html to the browser, you might not enjoy some of the features of the bigger frameworks.
+Ember.js and AngularJS are great for a single-page-app. But if your app has a lot of server-side rendering and it spits html to the browser, you might not enjoy many features that the bigger frameworks offer.
 
 ### Modularity
-If all you need is one or two features (data binding and event-handling, in your case) it might be better to find smaller libraries that ease your pain. AngularJS comes with testing framework, router, data-binding, event handling, dependency injection and more. We don't have a need (at the moment) most of those.
+If all you need is one or two features (in our case it's data binding and event-handling) it might be better to find smaller libraries that ease your pain. AngularJS comes with testing framework, router, data-binding, event handling, dependency injection and more. We don't have a need (at the moment) most of those.
 
 ### Learning curve
 Ractive.js takes a few hours to learn. You can turn on your HACKER_MODE by `wget -r http://www.ractivejs.org/` and read it on your next flight from LA to Chicago.  
