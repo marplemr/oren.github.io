@@ -48,7 +48,8 @@ There are a few problems with this code:
 ## The Ractive.js version
 
 ```js
-// this line will insert #notes-template into #notes
+// calling the Ractive constructor function will display our template on the page.
+// read more about it [here](https://github.com/Rich-Harris/Ractive/wiki/Initialisation-options).
 var ractive = new Ractive({
   el: 'notes',
   template: '#notes-template',
@@ -64,31 +65,28 @@ ractive.on('add', function () {
 
 Ractive uses [mustache](http://mustache.github.io/) for it's HTML templates:
 ```html
-<div id='notes'></div>
-<script id='notes-template' type='text/ractive'>
-  <section class="notes">
-      <form action="post">
+<section class="notes">
+    <form action="post">
 
-          {{^adding}}
-          <label class="default">
-              <input type="text" placeholder="Add a note..." proxy-click="add">
-          </label>
-          {{/adding}}
+        {{^adding}}
+        <label class="default">
+            <input type="text" placeholder="Add a note..." proxy-click="add">
+        </label>
+        {{/adding}}
 
-          {{#adding}}
-              <div class="adding">
-                  <label>
-                      <textarea name="content" value="{{ note.content }}" autofocus></textarea>
-                  </label>
+        {{#adding}}
+            <div class="adding">
+                <label>
+                    <textarea name="content" value="{{ note.content }}" autofocus></textarea>
+                </label>
 
-                  <button class="save" type="submit">Save</button>
+                <button class="save" type="submit">Save</button>
 
-                  <a class="cancel" href="#cancelAdd" proxy-click="cancelAdd">Cancel</a>
-              </div>
-          {{/adding}}
-      </form>
-  </section>
-/script>
+                <a class="cancel" href="#cancelAdd" proxy-click="cancelAdd">Cancel</a>
+            </div>
+        {{/adding}}
+    </form>
+</section>
 ```
 ## What's going on here?
 
