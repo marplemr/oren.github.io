@@ -107,5 +107,5 @@ Ember.js and AngularJS are great for a single-page-app. But if your app has a lo
 If all you need is one or two features (in our case it's data binding and event-handling) it might be better to find smaller libraries that ease your pain. AngularJS comes with testing framework, router, data-binding, event handling, dependency injection and more. Right now We don't need many of them.
 
 ### Learning curve
-Ractive.js takes a few hours to learn. Rumors say that it can be learned inside-out on a flight from LA to Chicago.  
+Ractive.js takes a few hours to learn. Rumors say that it can be learned inside-out on a flight from LA to Chicago!
 AngularJS will require a few weeks of investment and Ember.js...aham..[good luck with that](http://emberjs.com/blog/2013/03/21/making-ember-easier.html).
