@@ -41,7 +41,7 @@ $('.add-note').on('click', 'label.default', function (e) {
 ```
 There are a few problems with this code:
 
-1. It will get messy and hard to maintain (This example is simple so you won't fall a sleep)
+1. It will get messy and hard to maintain (This example is deliberately simple so you won't fall a sleep)
 1. DOM changes might break our handler
 1. CSS changes (for example changing .add-note to .add) will break our code as well
 
