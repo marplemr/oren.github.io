@@ -1,7 +1,7 @@
 # Ractive.js
 
 One of the most frustrating parts of writing web apps is DOM manipulation and event handling.
-Let's say we want to hide an element and show another one when a user click on the 'add-note' textbox.
+To demonstrate this, let's use this common scenario - we want to hide an element and show another one when a user click on the 'add-note' textbox.
 
 We will look at two way of doing it - one with jQuery and the other with [Ractive.js](http://www.ractivejs.org).
 At the end we'll talk a bit about Ractive.js and how it compares to AngularJS and Ember.js.
