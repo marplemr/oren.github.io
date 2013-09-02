@@ -1,3 +1,5 @@
+# Don't release Zalgo!
+
 Here is a short and practical version of Isaac's post - [Designing APIs for Asynchrony] [1].  
 Zalgo is a Issac's nickname for a function that is not predictable. What it means is a function that accepts a callback and sometimes returns it right away, and some other times it returns it after some delay, in the future.
 
