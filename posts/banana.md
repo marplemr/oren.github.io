@@ -12,7 +12,7 @@ We decided to dump the Presenters and instead use small helper functions that ac
 1. **Complexity** - Some pages display different variation of the same data. It forced us to use inheritance as a way to share common functionality and it quickly became a maintenance nightmare.
 Here is one ugly example of a 3 levels hierarchy we had: nearby_listing -> listing -> base_listing.
 1. **Bloat** - The Presenters were overweight. Listing presenter is 1000 lines of 150 functions.
-1. **Testability** - [God classes](http://en.wikipedia.org/wiki/God_object) are doing too many thing and are painful to test.
+1. **Testability** - [God objects](http://en.wikipedia.org/wiki/God_object) are doing too many thing and are painful to test.
 1. **Flexibility** - Changes in Bento API require changes in multiple Presenters since they assume a given JSON structure.
 Bento is about to allow clients to ask for more granular pieces of data. Breaking the Presenter into small functions will make our app more flexible for API changes.
 
