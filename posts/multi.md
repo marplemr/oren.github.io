@@ -67,8 +67,9 @@ ypu-srp/
 │   └── ypu-util
 ├── package.json
 ├── public
-│   ├── css
-│   └── js
+│   └── srp
+│       ├── css
+│       └── js
 └── server.js
 ```
 
@@ -85,12 +86,13 @@ ypu-mybook/
 │   └── ypu-util
 ├── package.json
 ├── public
-│   ├── css
-│   └── js
+│   └── mybook
+│       ├── css
+│       └── js
 └── server.js
 ```
 
-Notice that tracking, style and util are dependencies of both projects. public/css and public/js contain project specific code.
+Notice that tracking, style and util are dependencies of both projects. public/mybook/css and public/mybook/js contain project specific code.
 
 ### Deployment
 
@@ -109,5 +111,7 @@ We have mainly 2 options:
 * Innovation - big codebase makes it hard to experiment with new tools/technologies.
 
 ## Try it
-We wrote a [proof-of-concept](https://github.com/citrusbyte/ypu-router) of that approach.  
-It uses 3 separate projects: router, SRP, and the current node project (Home, MIP and Mybook).
+Last Friday Cyx, Rese and myself wrote a [proof-of-concept](https://github.com/citrusbyte/ypu-router) of that approach.  
+We separated the SRP into an independant website (only prints hello world) and kept the others (Home, MIP and Mybook) in the current project.
+If you don't have access to the above URL, you can look at this [simplified version](https://github.com/oren/multi-sites).
+
