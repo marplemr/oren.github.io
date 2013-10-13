@@ -110,4 +110,4 @@ We have mainly 2 options:
 
 ## Try it
 We wrote a [proof-of-concept](https://github.com/citrusbyte/ypu-router) of that approach.  
-It uses 3 seperate projects: router, SRP, and the current node project (Home, MIP and Mybook).
+It uses 3 separate projects: router, SRP, and the current node project (Home, MIP and Mybook).
