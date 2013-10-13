@@ -32,7 +32,7 @@ The dependencies for each site will be NPM packages and some of them will be sha
 |                                                         |
 |                       +---------+                       |
 |                       |         |                       | router: Node.js app or Nginx
-|                       | router  |                       | home/profile/auth: Node.js website
+|                       | router  |                       | home/srp/mip/mybook: Node.js website
 |                       |         |                       |
 |               ------- +---------+ ------                |
 |              /        /        |        \               |
