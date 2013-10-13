@@ -103,15 +103,15 @@ We have mainly 2 options:
 
 ## Why
 
-* Maintenance - easier to add feature/fix bug when working on smaller codebase.
-* Flexible - each project might require different architecture/framework.
+* Maintenance - easier to add feature/fix bugs when working on smaller codebase.
+* Flexible - each sub-app might require different architecture/framework. For example - Mybook might be a single-page-app while Home is not.
 * Velocity - since each project can be deployed separately, new features or bug fixes hit production faster.
-* Team structure - clear boundaries between features can lead to more focused teams.
+* Team structure - clear boundaries between features can lead to laser-focused teams.
 * Scaling - sub-app that receives more traffic is scaled horizontally by adding more instances.
 * Innovation - big codebase makes it hard to experiment with new tools/technologies.
 
 ## Try it
 Last Friday Cyx, Rese and myself wrote a [proof-of-concept](https://github.com/citrusbyte/ypu-router) of that approach.  
 We separated the SRP into an independant website (only prints hello world) and kept the others (Home, MIP and Mybook) in the current project.
-If you don't have access to the above URL, you can look at this [simplified version](https://github.com/oren/multi-sites).
+If you don't have access to the above URL, you can use this [simplified version](https://github.com/oren/multi-sites).
 
