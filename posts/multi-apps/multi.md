@@ -60,7 +60,7 @@ Notice that tracking, style and util are dependencies of both projects. public/c
 
 Nginx sites in front of the hosts and provide load balancing and SSL termination.
 For the sake of simplicity (deployment/monitoring), the router and the websites can live on the same host, each on it's own process.
-The only caveat is that we continue to use 8 core machines. It will allow us to have maximum of 7 separate websites + router.
+The only caveat is that we continue to use 8-core machines. It will allow us to have maximum of 7 separate websites + router.
 If at some point we decide to use smaller machines, we can have each website on it's own host.
 
 ## Why
@@ -83,9 +83,3 @@ https://github.com/citrusbyte/ypu-router
 https://github.com/citrusbyte/ypu-srp
 https://github.com/citrusbyte/yp
 
-cd ypu-router && npm install && node server
-cd ypu-srp && npm install && node server
-cd yp && npm install && PORT=8001 make run
-
-now hit the 0.0.0.0:8000 (the router)
-make a search for a business and you should see 'Cpk'. The SRP is served from the ypu-srp app that runs on port 8002.

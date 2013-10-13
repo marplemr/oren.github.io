@@ -5,7 +5,7 @@
 Sometimes I need a quick way to serve a simple website.  
 Here are 3 way you can do that with node.
 
-1. Hardcoding the file's content
+## 1. Hardcoding the file's content
 
 ```js
 var http = require('http');
@@ -23,7 +23,9 @@ http.createServer(function (req, res) {
 console.log('Server running at http://127.0.0.1:3000');
 ```
 
-2. Using fs.readFile - will load the entire file into memory before spitting it out to the browser
+## 2. Using fs.readFile
+
+This will load the entire file into memory before spitting it out to the browser
 
 ```js
 var http = require('http');
@@ -41,8 +43,9 @@ http.createServer(function (req, res) {
 console.log('Server running at http://127.0.0.1:3000');
 ```
 
-3. Using fs.createReadStream - only loading small chunks to memory and piping it to the response.  
-This is great for giant files.
+## 3. Using fs.createReadStream
+
+only loading small chunks to memory and piping it to the response. This is great for giant files.
   
 ```js
 var http = require('http');
