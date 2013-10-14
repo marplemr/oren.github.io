@@ -101,6 +101,10 @@ We have mainly 2 options:
 1. [Blue-green deployment](http://martinfowler.com/bliki/BlueGreenDeployment.html) - setup new hosts, deploy new code and point the load-balancer to those hosts.
 1. Rolling deployment - Disconnect host-1 from load balancer, deploy app(s), reconnect host-1 and repeat with all hosts.
 
+## Performance
+
+http-proxy adds around 20ms to each request. 
+
 ## Why
 
 * Maintenance - easier to add feature/fix bugs when working on smaller codebase.
