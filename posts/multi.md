@@ -2,7 +2,7 @@
 
 ![router2](http://25.media.tumblr.com/2e300fd39f1f99087292b8f58ee39062/tumblr_mia72sqn9w1r3gb3zo1_400.gif)
 
-## TLDR:
+## TLDR
 Cutting YP.com into small pieces is really nice.
 
 ## What
@@ -99,9 +99,9 @@ Notice that tracking, style and util are dependencies of both projects. public/m
 We have mainly 2 options:
 
 1. [Blue-green deployment](http://martinfowler.com/bliki/BlueGreenDeployment.html) - setup new hosts, deploy new code and point the load-balancer to those hosts.
-1. Rolling deployment - Disconnect host-1 from load balancer, deploy app(s), reconnect host-1 and repeat with all hosts.
+1. Rolling deployment - disconnect host-1 from load balancer, deploy app(s), reconnect host-1 and repeat with all hosts.
 
-## Performance
+### Performance
 
 http-proxy adds around 20ms to each request. 
 
@@ -116,6 +116,6 @@ http-proxy adds around 20ms to each request.
 
 ## Try it
 Last Friday Cyx, Rese and myself wrote a [proof-of-concept](https://github.com/citrusbyte/ypu-router) of that approach.  
-We separated the SRP into an independant website (only prints hello world) and kept the others (Home, MIP and Mybook) in the current project.
+We separated the SRP into an independant website (it only prints simple text for now) and kept the others (Home, MIP and Mybook) in the current project.
 If you don't have access to the above URL, you can use this [simplified version](https://github.com/oren/multi-sites).
 
