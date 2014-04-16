@@ -56,7 +56,7 @@ lets see what happend when we give it one argument, our js file:
 we see a long javascript code printed in the console. browserify did it's magic and wrap our file so it will be able to use our require function.  
 that's nice but we need to save the output into a file, right? lets do that with -o
 
-    browserify app.js > app.min.js
+    browserify app.js -o app.min.js
 
 now we can use bundle.js insted of app.js in our html file:
 
