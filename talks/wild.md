@@ -1,7 +1,7 @@
 Where the Wild Things Are - there's a gamer in all of us
 ========================================================
 
-![wild](http://i.imgur.com/goav8XO.jpg)
+![wild](http://i.imgur.com/oWMGPYU.jpg)
 
 * Speaker   : Oren Golan
 * Email     : orengolan@gmail.com
