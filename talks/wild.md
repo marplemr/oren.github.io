@@ -1,7 +1,6 @@
-Where the Wild Things Are - there's a gamer in all of us
-========================================================
+# Where the Wild Things Are  - there's a JS gamer in all of us
 
-![wild](http://i.imgur.com/oWMGPYU.jpg)
+![wild](http://i.imgur.com/XYJWad5.jpg)
 
 * Speaker   : Oren Golan
 * Email     : orengolan@gmail.com
