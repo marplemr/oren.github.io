@@ -35,7 +35,7 @@ Speaker Bio
 
 ![me](http://chicagowebconf.org/images/presenters/oren_golan.png)
 
-When not collecting Hello Kitty accessories, Oren like to create things and break them apart. He hack on Node.js at YP.com and eat Javascript for breakfest.
+When not collecting Hello Kitty accessories, Oren likes to create things and break them apart. He hacks on Node.js at YP.com and eats Javascript for breakfast.
 
 Links
 -----

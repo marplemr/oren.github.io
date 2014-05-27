@@ -1,4 +1,4 @@
-# Where the Wild Things Are  - there's a JS gamer in all of us
+# Where the Wild Things Are  - There's a JS gamer in all of us
 
 ![wild](http://i.imgur.com/XYJWad5.jpg)
 
@@ -9,10 +9,9 @@
 Description
 -----------
 
-If you think web development is a jungle, wait until you'll dive into game development using web technologies.  
-Before you run away you should pay attention to the recent developments that made it possible to build a full stack games using JavaScript -
-The adoption of Canvas, WebGL, web audio and video with the raise of Node.JS flatform.  
-Navigating your way in this wild world require unlearning what you know every few months.
+If you think web development is a jungle, wait until you dive into game development using web technologies.
+Before you run away you should pay attention to the recent developments that have made it possible to build a full stack games using JavaScript: The adoption of Canvas, WebGL, web audio and video with the raise of Node.JS platform.
+Navigating your way in this wild world requires unlearning what you know every few months.
 
 In this talk we will build a web-based game together. Don't get scared, all you need is basic JavaScript knowledge so prepare to learn a lot while having loads of fun!
 
@@ -24,6 +23,7 @@ In this talk we will build a web-based game together. Don't get scared, all you 
 * Controls
 * Animation
 * Sound
+* Organizing the codebase
 * Multiplayer (if time permits)
 
 Speaker Bio
@@ -31,7 +31,7 @@ Speaker Bio
 
 ![me](http://chicagowebconf.org/images/presenters/oren_golan.png)
 
-When not collecting Hello Kitty accessories, Oren like to create things and break them apart. He hack on Node.js at YP.com and eat Javascript for breakfest.
+When not collecting Hello Kitty accessories, Oren likes to create things and break them apart. He hacks on Node.js at YP.com and eats Javascript for breakfast.
 
 Links
 -----
