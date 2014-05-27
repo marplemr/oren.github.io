@@ -10,7 +10,7 @@ Description
 -----------
 
 If you think web development is a jungle, wait until you dive into game development using web technologies.
-Before you run away you should pay attention to the recent developments that have made it possible to build a full stack games using JavaScript: The adoption of Canvas, WebGL, web audio and video with the raise of Node.JS platform.
+Before you run away you should pay attention to the recent developments that have made it possible to build a full stack games using JavaScript: The adoption of Canvas, WebGL, web audio and video with the rise of Node.JS platform.
 Navigating your way in this wild world requires unlearning what you know every few months.
 
 In this talk we will build a web-based game together. Don't get scared, all you need is basic JavaScript knowledge so prepare to learn a lot while having loads of fun!
