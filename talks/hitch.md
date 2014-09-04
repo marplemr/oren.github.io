@@ -33,7 +33,7 @@ When asynchronous style finally makes sense:
 Speaker Bio
 -----------
 
-![me](http://chicagowebconf.org/images/presenters/oren_golan.png)
+![me](http://oren.github.io/oren_golan.png)
 
 When not collecting Hello Kitty accessories, Oren likes to create things and break them apart. He hacks on Node.js at YP.com and eats Javascript for breakfast.
 
