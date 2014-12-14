@@ -4,7 +4,7 @@
 
 * Speaker   : Oren Golan
 * Email     : orengolan@gmail.com
-* Length    : 30 - 60 minutes
+* Length    : 25 minutes
 
 Description
 -----------
@@ -24,7 +24,6 @@ In this talk we will build a web-based game together. Don't get scared, all you 
 * Animation
 * Sound
 * Organizing the codebase
-* Multiplayer (if time permits)
 
 Speaker Bio
 -----------
