@@ -30,7 +30,7 @@ Speaker Bio
 
 ![me](http://oren.github.io/oren_golan.png)
 
-When not collecting Hello Kitty accessories, Oren likes to create things and break them apart. He hacks on Node.js at YP.com and eats Javascript for breakfast.
+When not collecting Hello Kitty accessories, Oren likes to create things and break them apart. He hacks on Node.js and Go at YP.com and eats Javascript for breakfast.
 
 Links
 -----
