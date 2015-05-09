@@ -25,9 +25,9 @@ Based on [this Tutorial](http://localhost:300://developer.mozilla.org/en-US/docs
 ### Numbers
 
 ```js
-0.1 + 0.2 == 0.30000000000000004
-Math.sin(3.5);
-var d = Math.PI * r * r;
+var num = 0.1;
+var x = Math.sin(3.5);
+var d = Math.PI * 3 * 2;
 ```
 
 Convert string to int
@@ -165,11 +165,14 @@ var person = {name: 'josh', age: 23};
 ## Arrays
 
 ```js
+// a is an array
 var a = ["dog", "cat", "hen"];
+
+// assigning a string into index 100 of our array
 a[100] = "fox";
 a.length; // 101
 
-// add item to array
+// add item to the end of the array
 a.push('kitten');
 
 // print each element
@@ -178,21 +181,24 @@ a.forEach(function(item){
 });
 ```
 
-More functions of Array
-```
-a.toString() Returns a string with the toString() of each element separated by commas.
-a.toLocaleString() Returns a string with the toLocaleStringring() of each element separated by commas.
-a.concat(item1[, item2[, ...[, itemN]]]) Returns a new array with the items added on to it.
-a.join(sep) Converts thate array to a string - values delimited by the sep param
-a.pop() Removes and returns the last item.
-a.push(item1, ..., itemN) Push adds one or  more items to the end.
-a.reverse() Reverse the array.
-a.shift() Removes and returns the first item.
-a.slice(start, end) Returns a sub-array.
- array.sort([cmpfn]) Takes an optional comparison function.
-a.splice(start, delimitedelcount[, item1[, ...[, itemN]]]) Lets you modify an array by deleting   a section and replacing it with more items.
-a.unshift([item]) Prepe
-```
+A few functions of Arrays
+
+
+| Usage        | What it does           |
+| ------------- |:-------------:|
+|a.toString()   | Returns a string with the toString() of each element separated by commas.|
+|a.toLocaleString() |Returns a string with the toLocaleStringring() of each element separated by commas.|
+|a.concat(item1[, item2[, ...[, itemN]]])| Returns a new array with the items added on to it.|
+|a.join(sep)| Converts thate array to a string - values delimited by the sep param|
+|a.pop()| Removes and returns the last item.|
+|a.push(item1, ..., itemN)| Push adds one or  more items to the end.|
+|a.reverse()| Reverse the array.|
+|a.shift()| Removes and returns the first item.|
+|a.slice(start, end)| Returns a sub-array.|
+| array.sort([cmpfn])| Takes an optional comparison function.|
+|a.splice(start, delimitedelcount[, item1[, ...[, itemN]]])| Lets you modify an array by deleting a section and replacing it with more items.|
+|a.unshift([item]) |Prepe|
+
 
 ## Functions
 
