@@ -228,7 +228,7 @@ y(7); // 27
 
 **What happens when you return a function from a function?**  
 Everytime you call a function, JavaScript keeps a 'scope' object with the parameters you passed.  
-In the first example we pass 6. so the scope object is {a: 6}.  
+In the first example we pass 5. so the scope object is {a: 5}.  
 Since we asigned a function into x variable, x keeps a reference to that object so it's not being garbage collected.
 
 ## Custom objects
