@@ -1,6 +1,6 @@
 ## Javascript CheatSheet
 
-Based on [this Tutorial](http://localhost:300://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript).
+Based on [this Tutorial](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript).
 
 **Table of Contents**
 * [Types](#types)
