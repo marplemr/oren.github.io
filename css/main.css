@@ -1,0 +1,41 @@
+header {
+  display: flex;
+  justify-content: center;
+}
+
+header .filler {
+  flex-grow: 1;
+  background-color: black;
+}
+
+header .image {
+  flex-grow: 3;
+  height: 221px;
+  background-image: url(../images/head.png);
+  background-position: 100% 0;
+}
+
+@media (max-width: 1000px) {
+  header .filler {
+    flex-grow: 0;
+  }
+}
+
+.content {
+  display: flex;
+}
+
+.content section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.content section article{
+  flex-grow: 1;
+  /* padding: 5px; */
+  background-color: black;
+  width: 200px;
+  height: 200px;
+}
