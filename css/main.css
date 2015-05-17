@@ -25,6 +25,14 @@ header .image {
   display: flex;
 }
 
+.content .blog{
+  background-color: #FFAAAA;
+}
+
+.content .talks{
+  background-color: #D46A6A;
+}
+
 .content section {
   display: flex;
   flex-direction: column;
@@ -33,9 +41,8 @@ header .image {
 }
 
 .content section article{
-  flex-grow: 1;
-  /* padding: 5px; */
-  background-color: black;
+  margin: 10px;
+  background-color: grey;
   width: 200px;
-  height: 200px;
+  height: 100px;
 }
