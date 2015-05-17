@@ -24,63 +24,31 @@ header .image a img{
 }
 
 @media (max-width: 1000px) {
-  header .filler {
-    flex-grow: 0;
-  }
+  /* header .filler { */
+  /*   flex-grow: 0; */
+  /* } */
 }
 
-.titles {
+section.content {
   display: flex;
 }
 
-.titles div {
-  text-align: center;
+section.content section {
+  background-color: #FB9393;
   flex-grow: 1;
-  background-color: #FFAAAA;
-}
-
-.titles div.left {
-  margin-right: 10px;
-}
-
-.titles div.right {
-  margin-left: 10px;
-}
-
-.content {
   display: flex;
+  flex-wrap: wrap;
 }
 
-.content .blog {
-  background-color: #FFAAAA;
-}
+/* section.content section.divider { */
+/*   width: 100px; */
+/*   background-color: white; */
+/* } */
 
-.content .blog.right {
-  /* border-right: 1px solid black; */
-  margin-right: 10px;
-}
-
-.content .talks.left {
-  /* border-left: 1px solid black; */
-  margin-left: 10px;
-}
-
-.content .talks {
-  /* background-color: #D46A6A; */
-  background-color: #FFAAAA;
-}
-
-.content section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+section.content section img{
   flex-grow: 1;
-  padding-top: 10px;
-}
-
-.content section article{
+  align-self: center;
   margin: 20px;
-  background-color: grey;
   width: 200px;
   height: 200px;
 }
