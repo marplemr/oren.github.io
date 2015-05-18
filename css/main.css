@@ -26,6 +26,13 @@ header .image a {
   background-size: 100%;
 }
 
+.filler.right a {
+  display: none;
+  width: 40px;
+  height: 40px;
+  background-size: 100%;
+}
+
 .linkedin {
   float: right;
   background-image: url(../images/linkedin_icon.png);
@@ -120,6 +127,18 @@ section .content img {
   header .image {
     background-position: 50% 0;
   }
+
+  header .image a {
+    display: none;
+  }
+
+  .filler.right a {
+    display: block;
+  }
+
+  .filler.right a.github{
+    margin-top: 45px;
+  }
 }
 
 /* the 2 columns collide */
@@ -138,6 +157,7 @@ section .content img {
   section.talks-title-mobile, section.separator {
     display: block;
   }
+
 }
 
 @media (max-width: 500px) {
@@ -145,5 +165,9 @@ section .content img {
     background-position: 70% 0;
     height: 150px;
     background-size: 680px;
+  }
+
+  .filler.right a.github{
+    margin-top: 15px;
   }
 }
