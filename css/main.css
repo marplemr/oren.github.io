@@ -23,15 +23,6 @@ header .image a img{
   height: 30px;
 }
 
-/* section.content { */
-/* } */
-/*  */
-/* section.content section { */
-/*   display: flex; */
-/*   flex-wrap: wrap; */
-/*   justify-content: center; */
-/* } */
-
 section.blog, section.talks {
   display: flex;
   flex-wrap: wrap;
@@ -54,12 +45,6 @@ section.talks {
   float: right;
 }
 
-section.divider {
-  width: 4%;
-  float: left;
-  background-color: white;
-}
-
 section img {
   flex-grow: 1;
   margin: 20px;
@@ -76,7 +61,7 @@ section img {
 }
 
 @media (max-width: 630px) {
-  section.blog {
+  section.blog, section.talks {
     float: none;
   }
 }
