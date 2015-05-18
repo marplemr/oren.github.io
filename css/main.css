@@ -1,3 +1,7 @@
+body {
+  /* background-color: gray; */
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -23,25 +27,55 @@ header .image a img{
   height: 30px;
 }
 
+section.blog-title, section.talks-title {
+  width: 48%;
+  margin: auto;
+  background-color: pink;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 24px;
+}
+
+section.blog-title {
+  float: left;
+}
+
+section.talks-title {
+  float: right;
+}
+
 section.blog, section.talks {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: pink;
 }
 
 section.blog, section.talks {
   width: 48%;
-  padding-top: 20px;
   margin: auto;
 }
 
 section.blog {
-  background-color: blue;
   float: left;
 }
 
+section.talks-title-mobile {
+  display: none;
+  width: 48%;
+  margin: auto;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 24px;
+}
+
+section.separator {
+  display: none;
+  background-color: white;
+  height: 30px;
+}
+
 section.talks {
-  background-color: #FB9393;
   float: right;
 }
 
@@ -61,8 +95,21 @@ section img {
 }
 
 @media (max-width: 630px) {
-  section.blog, section.talks {
+  body {
+    background-color: pink;
+  }
+
+  section.blog, section.talks, section.blog-title, section.talks-title {
     float: none;
+    background-color: transparent;
+  }
+
+  section.talks-title {
+    display: none;
+  }
+
+  section.talks-title-mobile, section.separator {
+    display: block;
   }
 }
 
