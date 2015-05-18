@@ -23,28 +23,45 @@ header .image a img{
   height: 30px;
 }
 
-section.content {
-  display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
-}
+/* section.content { */
+/* } */
+/*  */
+/* section.content section { */
+/*   display: flex; */
+/*   flex-wrap: wrap; */
+/*   justify-content: center; */
+/* } */
 
-section.content section {
-  background-color: #FB9393;
-  flex-grow: 1;
+section.blog, section.talks {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-/* section.content section.divider { */
-/*   width: 100px; */
-/*   background-color: white; */
-/* } */
+section.blog, section.talks {
+  width: 48%;
+  padding-top: 20px;
+  margin: auto;
+}
 
-section.content section img{
+section.blog {
+  background-color: blue;
+  float: left;
+}
+
+section.talks {
+  background-color: #FB9393;
+  float: right;
+}
+
+section.divider {
+  width: 4%;
+  float: left;
+  background-color: white;
+}
+
+section img {
   flex-grow: 1;
-  /* align-self: center; */
   margin: 20px;
   width: 300px;
   height: 200px;
@@ -59,8 +76,8 @@ section.content section img{
 }
 
 @media (max-width: 630px) {
-  section.content {
-    display: block;
+  section.blog {
+    float: none;
   }
 }
 
