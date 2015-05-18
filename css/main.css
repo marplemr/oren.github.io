@@ -45,9 +45,6 @@ section.talks-title {
 }
 
 section.blog, section.talks {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   background-color: pink;
 }
 
@@ -58,6 +55,12 @@ section.blog, section.talks {
 
 section.blog {
   float: left;
+}
+
+section.blog .content, section.talks .content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 section.talks-title-mobile {
@@ -79,7 +82,7 @@ section.talks {
   float: right;
 }
 
-section img {
+section .content img {
   flex-grow: 1;
   margin: 20px;
   width: 300px;
@@ -88,12 +91,18 @@ section img {
   min-width: 300px;
 }
 
+.more {
+ text-align: center;
+ padding-bottom: 20px;
+}
+
 @media (max-width: 1000px) {
   header .image {
     background-position: 50% 0;
   }
 }
 
+/* the 2 columns collide */
 @media (max-width: 630px) {
   body {
     background-color: pink;
