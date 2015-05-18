@@ -1,10 +1,11 @@
-body {
-  /* background-color: gray; */
+.clear {
+  clear: both;
 }
 
 header {
   display: flex;
   justify-content: center;
+  margin-bottom: 10px;
 }
 
 header .filler {
@@ -19,18 +20,42 @@ header .image {
   background-position: 100% 0;
 }
 
-header .image a img{
-  margin-top: 10px;
-  margin-left: 10px;
+header .image a {
+  width: 40px;
+  height: 40px;
+  background-size: 100%;
+}
+
+.linkedin {
   float: right;
-  width: 30px;
-  height: 30px;
+  background-image: url(../images/linkedin_icon.png);
+}
+
+.twitter {
+  float: right;
+  background-image: url(../images/twitter_icon.png);
+}
+
+.github {
+  float: right;
+  background-image: url(../images/github_icon.png);
+}
+
+.linkedin:hover {
+  background-image: url(../images/linkedin_icon_pink.png);
+}
+
+.twitter:hover {
+  background-image: url(../images/twitter_icon_pink.png);
+}
+
+.github:hover {
+  background-image: url(../images/github_icon_pink.png);
 }
 
 section.blog-title, section.talks-title {
   width: 48%;
   margin: auto;
-  background-color: pink;
   text-align: center;
   padding-top: 10px;
   font-size: 24px;
@@ -42,10 +67,6 @@ section.blog-title {
 
 section.talks-title {
   float: right;
-}
-
-section.blog, section.talks {
-  background-color: pink;
 }
 
 section.blog, section.talks {
@@ -74,7 +95,6 @@ section.talks-title-mobile {
 
 section.separator {
   display: none;
-  background-color: white;
   height: 30px;
 }
 
@@ -105,12 +125,10 @@ section .content img {
 /* the 2 columns collide */
 @media (max-width: 630px) {
   body {
-    background-color: pink;
   }
 
   section.blog, section.talks, section.blog-title, section.talks-title {
     float: none;
-    background-color: transparent;
   }
 
   section.talks-title {
