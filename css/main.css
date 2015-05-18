@@ -23,7 +23,6 @@ header .image a img{
   height: 30px;
 }
 
-
 section.content {
   display: flex;
   /* justify-content: center; */
@@ -47,14 +46,28 @@ section.content section img{
   flex-grow: 1;
   /* align-self: center; */
   margin: 20px;
-  width: 200px;
+  width: 300px;
   height: 200px;
-  max-width: 200px;
-  min-width: 200px;
+  max-width: 300px;
+  min-width: 300px;
+}
+
+@media (max-width: 1000px) {
+  header .image {
+    background-position: 50% 0;
+  }
+}
+
+@media (max-width: 630px) {
+  section.content {
+    display: block;
+  }
 }
 
 @media (max-width: 500px) {
-  /* section.content { */
-    /* display: block; */
-  /* } */
+  header .image {
+    background-position: 70% 0;
+    height: 150px;
+    background-size: 680px;
+  }
 }
