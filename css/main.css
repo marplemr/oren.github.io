@@ -95,9 +95,14 @@ section.talks {
   float: right;
 }
 
-section .content img {
+section .content article {
   flex-grow: 1;
   margin: 20px;
+  width: 300px;
+  max-width: 300px;
+}
+
+section .content img {
   width: 300px;
   height: 200px;
   max-width: 300px;
@@ -129,9 +134,11 @@ section .content img {
 
 /* the 2 columns collide */
 @media (max-width: 630px) {
-  section .content img {
-    flex-grow: 1;
+  section .content article {
     margin: 10px 3px 0 3px;
+  }
+
+  section .content img {
     width: 150px;
     height: 100px;
     max-width: 150px;
