@@ -145,6 +145,11 @@ section .content img {
     min-width: 100px;
   }
 
+  section .content article {
+    max-width: 150px;
+    min-width: 100px;
+  }
+
   section.blog, section.talks {
     width: 50%;
   }
