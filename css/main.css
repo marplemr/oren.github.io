@@ -91,20 +91,6 @@ section.blog .content, section.talks .content{
   justify-content: center;
 }
 
-section.talks-title-mobile {
-  display: none;
-  width: 48%;
-  margin: auto;
-  text-align: center;
-  padding-top: 10px;
-  font-size: 24px;
-}
-
-section.separator {
-  display: none;
-  height: 30px;
-}
-
 section.talks {
   float: right;
 }
@@ -143,21 +129,18 @@ section .content img {
 
 /* the 2 columns collide */
 @media (max-width: 630px) {
-  body {
+  section .content img {
+    flex-grow: 1;
+    margin: 10px 3px 0 3px;
+    width: 150px;
+    height: 100px;
+    max-width: 150px;
+    min-width: 100px;
   }
 
-  section.blog, section.talks, section.blog-title, section.talks-title {
-    float: none;
+  section.blog, section.talks {
+    width: 50%;
   }
-
-  section.talks-title {
-    display: none;
-  }
-
-  section.talks-title-mobile, section.separator {
-    display: block;
-  }
-
 }
 
 @media (max-width: 500px) {
