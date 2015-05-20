@@ -153,6 +153,10 @@ section .content img {
   section.blog, section.talks {
     width: 50%;
   }
+
+  article p {
+    margin-top: 0px;
+  }
 }
 
 @media (max-width: 500px) {
