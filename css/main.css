@@ -109,9 +109,13 @@ section .content img {
   min-width: 300px;
 }
 
+article p {
+  text-align: center;
+}
+
 .more {
- text-align: center;
- padding-bottom: 20px;
+  text-align: center;
+  padding-bottom: 20px;
 }
 
 @media (max-width: 1000px) {
