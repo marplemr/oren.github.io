@@ -1074,8 +1074,7 @@ ccordion-tabs {
   box-shadow: 0 2px 4px #e6e6e6;
   cursor: pointer;
   margin: 0 1em 1.5em 1em;
-  position: relative;
-  max-width: 300px; }
+  position: relative; }
   .card .card-image {
     overflow: hidden;
     max-height: 150px; }
@@ -1116,5 +1115,19 @@ ccordion-tabs {
 
 .cards {
   margin: 40px 0 0 0; }
+
+.cards {
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center; }
+
+.card {
+  max-width: 300px; }
 
 /*# sourceMappingURL=app.css.map */
