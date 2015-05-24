@@ -1,0 +1,5 @@
+app:
+  build: .
+  volumes:
+   - .:/src
+  command: "./sass-watch"

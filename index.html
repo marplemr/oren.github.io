@@ -1,131 +1,181 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
   <head>
-    <title>Oren's website</title>
-
-    <meta name="description" content="Oren's Website">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
-
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta charset=utf-8" />
+    <title>Oren's Website</title>
+    <link rel="stylesheet" href="css/app.css">
   </head>
-
   <body>
 
-    <header>
-      <div class='filler'></div>
-      <div class='image'>
-        <a href="https://www.github.com/oren" target="_blank" class='github'></a>
-        <a href='https://www.linkedin.com/in/orengolan' target='_blank' class='linkedin'></a>
-        <a href="https://www.twitter.com/oreng" target="_blank" class='twitter'></a>
+    <ul class="accordion-tabs">
+      <li class="tab-header-and-content">
+        <a href="javascript:void(0)" class="is-active tab-link">Videos</a>
+        <div class="tab-content">
+    <div class="cards">
+      <div class="card">
+        <div class="card-image">
+          <img src="images/docker.png" alt="">
+        </div>
+        <div class="card-header">
+         Docker Crash Course
+        </div>
+        <div class="card-copy">
+
+          <p>SoCal JS Meetup, Santa Monica</p>
+        </div>
       </div>
-      <div class='filler right'>
-        <a href="https://www.github.com/oren" target="_blank" class='github'></a>
-        <div class='clear'></div>
-        <a href="https://www.twitter.com/oreng" target="_blank" class='twitter'></a>
-        <div class='clear'></div>
-        <a href='https://www.linkedin.com/in/orengolan' target='_blank' class='linkedin'></a>
+
+      <div class="card">
+        <div class="card-image">
+          <img src="images/noderoad.jpg" alt="">
+        </div>
+        <div class="card-header">
+          Don't Panic - The Hitker's Guide to Node
+        </div>
+        <div class="card-copy">
+          <p>Node on The Road Event, Santa Monica</p>
+        </div>
       </div>
-    </header>
 
-    <section class='blog-title'>Blog</section>
-    <section class='talks-title'>Talks</section>
-
-    <section class='blog'>
-      <div class='content'>
-        <article>
-          <a href="https://github.com/oren/node-website-template" target='_blank'>
-            <img src="https://27gen.files.wordpress.com/2013/06/lego-red-brick.jpg" alt="nodejs template" />
-          </a>
-          <p>A Template for Node.js Website/Webservice</p>
-        </article>
-        <article class='one'>
-          <a href="http://engineering.yp.com/post/nodeconf" target='_blank'>
-            <img src="images/tent.jpg" alt="nodeconf" />
-          </a>
-          <p>NodeConf Video</p>
-        </article>
-        <article>
-          <a href="https://github.com/oren/multi-sites" target='_blank'>
-            <img src="https://camo.githubusercontent.com/65cee360eb6d3fb76e1e05b1bfae57b10ef9e006/687474703a2f2f32352e6d656469612e74756d626c722e636f6d2f32653330306664333966316639393038373239326238663538656533393036322f74756d626c725f6d6961373273716e39773172336762337a6f315f3430302e676966" alt="modular website" />
-          </a>
-          <p>Modular Website</p>
-        </article>
-        <article>
-          <a href="https://github.com/oren/oren.github.io/blob/master/posts/ansible/ansible.md" target='_blank'>
-            <img src="http://www.jaimegago.com/wp-content/uploads/2013/03/Screen-Shot-2013-03-30-at-6.07.36-PM.png" alt="ansible" />
-          </a>
-          <p>Configure your servers with Ansible</p>
-        </article>
-        <article>
-           <a href="https://github.com/oren/oren.github.io/tree/master/posts/leveldb.md" target='_blank'>
-            <img src="http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2014/10/1413656945leveldb.png" alt="level db" />
-          </a>
-          <p>Level DB</p>
-        </article>
+      <div class="card">
+        <div class="card-image">
+          <img src="images/beijing-map.jpg" alt="">
+        </div>
+        <div class="card-header">
+         Node.js at YP.com
+        </div>
+        <div class="card-copy">
+          <p>Jingjs Conference, Beijing</p>
+        </div>
       </div>
-      
-      <!-- <div class='more'>  -->
-      <!--   <a href="#">More Blog Posts</a> -->
-      <!-- </div> -->
-    </section>
 
-    <!-- <a href="https://github.com/oren/oren.github.io/tree/master/posts/client&#45;side&#45;compare.md" target='_blank'> -->
-
-    <section class='talks'>
-      <div class='content'>
-        <article>
-          <a href="https://github.com/oren/docker-crash-course" target='_blank'>
-            <img src="images/docker.png" alt="docker" />
-          </a>
-          <p>Docker Crash Course</p>
-        </article>
-        <article class='two'>
-          <a href="https://www.joyent.com/developers/videos/node-js-on-the-road-la-oren-golan" target='_blank'>
-          <img src="images/noderoad.jpg" alt="noderoad" />
-          </a>
-          <p>Node.js at YP, Node on The Road Event</p>
-        </article>
-        <article class='three'>
-          <a href="http://2013.jsconf.cn" target='_blank'>
-          <img src="images/beijing-map.jpg" alt="docker" />
-          </a>
-          <p>Node.js, Jingjs Conference, Beijing</p>
-        </article>
-        <article>
-          <a href="https://www.youtube.com/watch?v=qkqRBHw7iNk" target='_blank'>
-            <img src="images/arcade2.jpg" alt="arcade" />
-          </a>
+      <div class="card">
+        <div class="card-image">
+          <img src="images/arcade2.jpg" alt="">
+        </div>
+        <div class="card-header">
+          Flappy Bird Arcade game
+        </div>
+        <div class="card-copy">
           <p>YP Hackathon</p>
-        </article>
-        <article>
-          <a href="https://www.youtube.com/watch?v=1RW9bxQ1EXI" target='_blank'>
-            <img src="images/node-yp.jpg" alt="node at YP" />
-          </a>
-          <p>How I learned to stop worrying and love the Node</p>
-        </article>
-        <article>
-          <a href="https://www.youtube.com/watch?v=8-zGQn_Fs4k" target='_blank'>
-            <img src="images/sinatra.jpg" alt="sinatra" />
-          </a>
-          <p>Sinatra - The little framework that could</p>
-        </article>
-        <article>
-          <a href="http://chicagowebconf2012.sched.org/event/3231b6996ed535e2345a6b2969d2fa81#.VVwaMd-c2Ch" target='_blank'>
-            <img src="images/chicago.jpg" alt="angular" />
-          </a>
-          <p>Angular - HTML on Steroids, Chicago Web Conf</p>
-        </article>
+        </div>
       </div>
 
-      <!-- <div class='more'>  -->
-      <!--   <a href="#">More Talks</a> -->
-      <!-- </div> -->
-    </section>
+      <div class="card">
+        <div class="card-image">
+          <img src="images/node-yp.jpg" alt="">
+        </div>
+        <div class="card-header">
+         How I learned to stop worrying and love the Node
+        </div>
+        <div class="card-copy">
+          <p>YP Tech Talk, Glendale</p>
+        </div>
+      </div>
 
+      <div class="card">
+        <div class="card-image">
+          <img src="images/sinatra.jpg" alt="">
+        </div>
+        <div class="card-header">
+         Sinatra - The little framework that could
+        </div>
+        <div class="card-copy">
+          <p>YP Tech Talk, Glendale</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image">
+          <img src="images/chicago.jpg" alt="">
+        </div>
+        <div class="card-header">
+         Angular - HTML on Steroids
+        </div>
+        <div class="card-copy">
+          <p>Chicago Web Conf</p>
+        </div>
+      </div>
+
+    </div>
+        </div>
+      </li>
+      <li class="tab-header-and-content">
+        <a href="javascript:void(0)" class="tab-link">Blog</a>
+        <div class="tab-content">
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-image">
+          <img src="https://27gen.files.wordpress.com/2013/06/lego-red-brick.jpg" alt="nodejs template" />
+        </div>
+        <div class="card-header">
+         A Template for Node.js Website/Webservice
+        </div>
+        <div class="card-copy">
+          <p>A Template for Node.js Website/Webservice</p>
+          <!-- <p></p> -->
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image">
+          <img src="images/tent.jpg" alt="nodeconf" />
+        </div>
+        <div class="card-header">
+          NodeConf
+        </div>
+        <div class="card-copy">
+          <p>Video from NodeConf</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image">
+          <img src="https://camo.githubusercontent.com/65cee360eb6d3fb76e1e05b1bfae57b10ef9e006/687474703a2f2f32352e6d656469612e74756d626c722e636f6d2f32653330306664333966316639393038373239326238663538656533393036322f74756d626c725f6d6961373273716e39773172336762337a6f315f3430302e676966" alt="modular website" />
+        </div>
+        <div class="card-header">
+         Modular Website
+        </div>
+        <div class="card-copy">
+          <p>Modular Website</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image">
+          <img src="http://www.jaimegago.com/wp-content/uploads/2013/03/Screen-Shot-2013-03-30-at-6.07.36-PM.png" alt="ansible" />
+        </div>
+        <div class="card-header">
+          Configure your servers with Ansible
+        </div>
+        <div class="card-copy">
+          <p>Configure your servers with Ansible</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image">
+          <img src="http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2014/10/1413656945leveldb.png" alt="level db" />
+        </div>
+        <div class="card-header">
+          Level DB
+        </div>
+        <div class="card-copy">
+          <p>Level DB</p>
+        </div>
+      </div>
+
+    </div>
+        </div>
+      </li>
+    </ul>
+
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="javascript/main.js"></script>
+
   </body>
 </html>
+
+

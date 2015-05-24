@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cd css
+sass --watch app.sass:app.css
