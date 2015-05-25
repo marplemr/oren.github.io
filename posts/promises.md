@@ -11,7 +11,7 @@ What can you do inside the functions `getContacts` and `getAttachments`?
 
 You have 3 options:
 
-1. a function that returns a promise
+1) a function that returns a promise
 
 ```js
 function getContacts(result) {
@@ -23,7 +23,7 @@ function getContacts(result) {
 }
 ```
 
-2. a function that returns a single value
+2) a function that returns a single value
 
 ```js
 function getContacts(result) {
@@ -31,7 +31,7 @@ function getContacts(result) {
 }
 ```
 
-3. a function that throws a value
+3) a function that throws a value
 
 ```js
 function getContacts(result) {

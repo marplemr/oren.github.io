@@ -31,9 +31,7 @@
 </code></pre>
 <p>What can you do inside the functions <code>getContacts</code> and <code>getAttachments</code>?</p>
 <p>You have 3 options:</p>
-<ol>
-<li>a function that returns a promise</li>
-</ol>
+<p>1) a function that returns a promise</p>
 <pre><code class="lang-js">function getContacts(result) {
   return new Promise(function(resolve, reject) {
     setTimeout(function() {
@@ -42,16 +40,12 @@
   })
 }
 </code></pre>
-<ol>
-<li>a function that returns a single value</li>
-</ol>
+<p>2) a function that returns a single value</p>
 <pre><code class="lang-js">function getContacts(result) {
   return result + &#39; I am doing something sync.&#39;;
 }
 </code></pre>
-<ol>
-<li>a function that throws a value</li>
-</ol>
+<p>3) a function that throws a value</p>
 <pre><code class="lang-js">function getContacts(result) {
   throw new Error(&#39;user logged out!&#39;);
 }
