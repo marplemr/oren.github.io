@@ -15,9 +15,9 @@ You have 3 options:
 ```js
 function getContacts(result) {
     return new Promise(function(resolve, reject) {
-      setTimeout(function() {
-        resolve(result + ' get contacts.');
-      }, 10);
+        setTimeout(function() {
+            resolve(result + ' get contacts.');
+        }, 10);
     })
 }
 ```
