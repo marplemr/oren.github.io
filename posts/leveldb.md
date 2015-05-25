@@ -20,8 +20,6 @@ If we compare it to Redis, it's even lighter, has more reliable writes and, unli
 
 ### Example
 
-<a href="https://runnable.com/UYczO2hmOMwQAAEw/A-simple-webserver" target="_blank"><img src="https://runnable.com/external/styles/assets/runnablebtn.png" style="width:67px;height:25px;"></a>
-
 Let's dive right in. Here is an example of adding 2 blog posts and reading all the db using streams:
 
     npm install levelup

@@ -21,5 +21,4 @@ Open index.html in the browser and modify any sass or scss file using your text 
 
 ## New Talk / Post
 
-    bin/convert foo
-    cp foo.md foo.html posts/
+    ./convert foo   # converts foo.md into foo.html
