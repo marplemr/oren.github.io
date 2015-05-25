@@ -23,7 +23,7 @@ function getContacts(result) {
 }
 ```
 
-1. a function that returns a single value
+2. a function that returns a single value
 
 ```js
 function getContacts(result) {
