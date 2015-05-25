@@ -14,12 +14,13 @@ This image is a template based on the Bourbon intro [video](https://www.youtube.
 
     git clone git@github.com:oren/bourbon.git
     cd bourbon
-    docker-compose build   # put ruby, sass, bourbon, neat, and bitters inside a docker image
-    docker-compose up      # watch sass files and compile them into css/app.css
+    docker-compose build app   # put ruby, sass, bourbon, neat, and bitters inside a docker image
+    docker-compose up app      # watch sass files and compile them into css/app.css
 
 Open index.html in the browser and modify any sass or scss file using your text editor.
 
 ## Markdown
 
-    alias marked='docker-compose -f docker-compose-iojs.yml run app'
+    docker-compose build marked
+    alias marked='docker-compose run marked'
     marked foo.md

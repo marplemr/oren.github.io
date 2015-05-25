@@ -3,3 +3,9 @@ app:
   volumes:
    - .:/src
   command: "./sass-watch"
+
+marked:
+  build: ./iojs
+  volumes:
+   - .:/src
+  entrypoint: "marked"

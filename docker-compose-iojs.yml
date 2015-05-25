@@ -1,5 +1,0 @@
-app:
-  build: ./iojs
-  volumes:
-   - .:/src
-  entrypoint: "marked"

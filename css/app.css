@@ -728,6 +728,10 @@ header {
   color: #aaa; }
   .post .blog-link:hover {
     color: #fa40c6; }
+.post .markdown-body {
+  min-width: 200px;
+  max-width: 790px;
+  margin: 0 auto; }
 
 body {
   background-color: #EBEBEB; }
