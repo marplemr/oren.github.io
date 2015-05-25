@@ -18,3 +18,8 @@ This image is a template based on the Bourbon intro [video](https://www.youtube.
     docker-compose up      # watch sass files and compile them into css/app.css
 
 Open index.html in the browser and modify any sass or scss file using your text editor.
+
+## Markdown
+
+    alias marked='docker-compose -f docker-compose-iojs.yml run app'
+    marked foo.md
