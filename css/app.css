@@ -715,6 +715,20 @@ header {
   .blog .talks-link:hover {
     color: #fa40c6; }
 
+.post article {
+  padding-top: 127px;
+  width: 90%;
+  margin: 0 auto; }
+.post .talks-link {
+  color: #aaa;
+  cursor: default; }
+  .post .talks-link:hover {
+    color: #fa40c6; }
+.post .blog-link {
+  color: #aaa; }
+  .post .blog-link:hover {
+    color: #fa40c6; }
+
 body {
   background-color: #EBEBEB; }
 

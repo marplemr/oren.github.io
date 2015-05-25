@@ -1,0 +1,8 @@
+[webservers]
+stage-web1.example.com
+stage-web2.example.com
+
+[dbservers]
+stage-db1.example.com
+stage-db2.example.com
+stage-db2.example.com
