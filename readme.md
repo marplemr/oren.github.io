@@ -15,4 +15,5 @@ Open index.html in the browser and modify any sass or scss file using your text 
 ## New Talk / Post
 
     npm install marked -g
+    cd posts
     ./convert foo   # converts foo.md into foo.html
