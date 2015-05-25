@@ -1114,9 +1114,6 @@ ccordion-tabs {
       background-color: #f7f7f7; }
 
 .cards {
-  margin: 40px 0 0 0; }
-
-.cards {
   -webkit-box-pack: center;
   -moz-box-pack: center;
   box-pack: center;
