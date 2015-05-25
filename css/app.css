@@ -735,6 +735,8 @@ header {
   padding: inherit 30px 30px 30px; }
   .post .markdown-body ul {
     list-style: disc; }
+  .post .markdown-body ol {
+    list-style: decimal; }
 
 body {
   background-color: #EBEBEB; }
