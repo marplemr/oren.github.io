@@ -34,23 +34,23 @@
 <ol>
 <li><p>a function that returns a promise</p>
 <pre><code class="lang-js">function getContacts(result) {
-return new Promise(function(resolve, reject) {
- setTimeout(function() {
-   resolve(result + &#39; get contacts.&#39;);
- }, 10);
-})
+ return new Promise(function(resolve, reject) {
+   setTimeout(function() {
+     resolve(result + &#39; get contacts.&#39;);
+   }, 10);
+ })
 }
 </code></pre>
 </li>
 <li><p>a function that returns a single value</p>
 <pre><code class="lang-js">function getContacts(result) {
-return result + &#39; I am doing something sync.&#39;;
+ return result + &#39; I am doing something sync.&#39;;
 }
 </code></pre>
 </li>
 <li><p>a function that throws a value</p>
 <pre><code class="lang-js">function getContacts(result) {
-throw new Error(&#39;user logged out!&#39;);
+ throw new Error(&#39;user logged out!&#39;);
 }
 </code></pre>
 </li>
