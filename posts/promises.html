@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+    <title>Oren's Website - Docker Crash Course</title>
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/github-markdown.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css">
+  </head>
+  <body class='post'>
+
+    <div class='nav'>
+      <div class='social'>
+        <a href="https://www.twitter.com/oreng" target="_blank" class="twitter"></a>
+        <a href="https://www.linkedin.com/in/orengolan" target="_blank" class="linkedin"></a>
+        <a href="https://www.github.com/oren" target="_blank" class="github"></a>
+      </div>
+
+      <header>
+        <a href="http://oren.github.io" class='talks-link'>Talks</a>
+        <a href="../blog.html" class='blog-link'>Blog</a>
+      </header>
+    </div>
+
+    <article class='markdown-body'>
+<h1 id="promises-basics">Promises Basics</h1>
+<p>(This is a summary of <a href="http://pouchdb.com/2015/05/18/we-have-a-problem-with-promises.html">this blog post</a>)</p>
+<p>Here is a real world promise chain</p>
+<pre><code class="lang-js">login().then(getContacts).then(getAttachments).catch(error);
+</code></pre>
+<p>What can you do inside the functions <code>getContacts</code> and <code>getAttachments</code>?</p>
+<p>You have 3 options:</p>
+<ol>
+<li><p>a function that returns a promise</p>
+<pre><code class="lang-js">function getContacts(result) {
+return new Promise(function(resolve, reject) {
+ setTimeout(function() {
+   resolve(result + &#39; get contacts.&#39;);
+ }, 10);
+})
+}
+</code></pre>
+</li>
+<li><p>a function that returns a single value</p>
+<pre><code class="lang-js">function getContacts(result) {
+return result + &#39; I am doing something sync.&#39;;
+}
+</code></pre>
+</li>
+<li><p>a function that throws a value</p>
+<pre><code class="lang-js">function getContacts(result) {
+throw new Error(&#39;user logged out!&#39;);
+}
+</code></pre>
+</li>
+</ol>
+<p>If you want to run the examples clone my <a href="https://github.com/oren/promises-example">git repo</a>.</p>
+
+    </article>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
