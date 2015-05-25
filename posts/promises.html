@@ -32,29 +32,30 @@
 <p>What can you do inside the functions <code>getContacts</code> and <code>getAttachments</code>?</p>
 <p>You have 3 options:</p>
 <ol>
-<li><p>a function that returns a promise</p>
-<pre><code class="lang-js">function getContacts(result) {
- return new Promise(function(resolve, reject) {
-   setTimeout(function() {
-     resolve(result + &#39; get contacts.&#39;);
-   }, 10);
- })
-}
-</code></pre>
-</li>
-<li><p>a function that returns a single value</p>
-<pre><code class="lang-js">function getContacts(result) {
- return result + &#39; I am doing something sync.&#39;;
-}
-</code></pre>
-</li>
-<li><p>a function that throws a value</p>
-<pre><code class="lang-js">function getContacts(result) {
- throw new Error(&#39;user logged out!&#39;);
-}
-</code></pre>
-</li>
+<li>a function that returns a promise</li>
 </ol>
+<pre><code class="lang-js">function getContacts(result) {
+  return new Promise(function(resolve, reject) {
+    setTimeout(function() {
+      resolve(result + &#39; get contacts.&#39;);
+    }, 10);
+  })
+}
+</code></pre>
+<ol>
+<li>a function that returns a single value</li>
+</ol>
+<pre><code class="lang-js">function getContacts(result) {
+  return result + &#39; I am doing something sync.&#39;;
+}
+</code></pre>
+<ol>
+<li>a function that throws a value</li>
+</ol>
+<pre><code class="lang-js">function getContacts(result) {
+  throw new Error(&#39;user logged out!&#39;);
+}
+</code></pre>
 <p>If you want to run the examples clone my <a href="https://github.com/oren/promises-example">git repo</a>.</p>
 
     </article>

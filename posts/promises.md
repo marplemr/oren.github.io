@@ -12,27 +12,30 @@ What can you do inside the functions `getContacts` and `getAttachments`?
 You have 3 options:
 
 1. a function that returns a promise
+
 ```js
 function getContacts(result) {
-    return new Promise(function(resolve, reject) {
-        setTimeout(function() {
-            resolve(result + ' get contacts.');
-        }, 10);
-    })
+  return new Promise(function(resolve, reject) {
+    setTimeout(function() {
+      resolve(result + ' get contacts.');
+    }, 10);
+  })
 }
 ```
 
 1. a function that returns a single value
+
 ```js
 function getContacts(result) {
-    return result + ' I am doing something sync.';
+  return result + ' I am doing something sync.';
 }
 ```
 
 3. a function that throws a value
+
 ```js
 function getContacts(result) {
-    throw new Error('user logged out!');
+  throw new Error('user logged out!');
 }
 ```
 
