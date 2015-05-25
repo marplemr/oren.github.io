@@ -638,11 +638,17 @@ picture {
     height: 30px; }
   .social .twitter {
     background-image: url(../images/twitter_icon_gray.png); }
+    .social .twitter:hover {
+      background-image: url(../images/twitter_icon_pink.png); }
   .social .linkedin {
     background-image: url(../images/linkedin_icon_gray.png);
     margin: 5px 0 5px 0; }
+    .social .linkedin:hover {
+      background-image: url(../images/linkedin_icon_pink.png); }
   .social .github {
     background-image: url(../images/github_icon_gray.png); }
+    .social .github:hover {
+      background-image: url(../images/github_icon_pink.png); }
 
 header {
   background-color: #fff;
