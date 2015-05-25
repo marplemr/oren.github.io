@@ -675,19 +675,19 @@ header {
     color: #333; }
   .card .card-header, .card .card-copy {
     background: white;
-    color: #333;
+    color: #444;
     border-bottom: none;
     font-weight: normal; }
   .card .card-image {
     padding: 2px; }
-
-.talks-link {
-  margin-right: 20px;
-  font-size: 1.625em; }
-
-.blog-link {
-  margin-left: 20px;
-  font-size: 1.625em; }
+  .card em {
+    display: block;
+    color: #999;
+    font-size: 12px;
+    line-height: 10px;
+    padding: 0 1em 0.5em 1em;
+    font-weight: normal;
+    font-style: normal; }
 
 .home .talks-link {
   color: #fa40c6;
@@ -711,5 +711,13 @@ header {
 
 body {
   background-color: #EBEBEB; }
+
+.talks-link {
+  margin-right: 20px;
+  font-size: 1.625em; }
+
+.blog-link {
+  margin-left: 20px;
+  font-size: 1.625em; }
 
 /*# sourceMappingURL=app.css.map */
