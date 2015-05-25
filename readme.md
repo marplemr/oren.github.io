@@ -19,8 +19,7 @@ This image is a template based on the Bourbon intro [video](https://www.youtube.
 
 Open index.html in the browser and modify any sass or scss file using your text editor.
 
-## Markdown
+## New Talk / Post
 
-    docker-compose build marked
-    alias marked='docker-compose run marked'
-    marked foo.md
+    bin/convert foo
+    cp foo.md foo.html posts/

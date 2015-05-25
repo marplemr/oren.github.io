@@ -2,7 +2,7 @@
 
 Presentation at the [SoCal Node.js Meetup](http://www.meetup.com/SoCal-Node-JS/events/221022035)
 
-[![video](http://ddf912383141a8d7bbe4-e053e711fc85de3290f121ef0f0e3a1f.r87.cf1.rackcdn.com/docker-whale.png)](https://www.youtube.com/embed/BgDhf50Ya2s)
+[![video](https://github.com/oren/docker-crash-course/raw/master/website/pictures/intro.png)](https://www.youtube.com/embed/BgDhf50Ya2s)
 
 (Click on the image above to watch the video of the talk)
 

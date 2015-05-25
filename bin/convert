@@ -1,0 +1,9 @@
+#!/bin/sh
+
+if [ $1 ]; then
+  cp before.html $1.html
+  marked $1.md >> $1.html
+  cat after.html >> $1.html
+else
+  echo please provide filename without extention. for example: ./convert modular
+fi
