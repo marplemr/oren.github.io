@@ -628,6 +628,11 @@ picture {
     .card:active .card-header {
       background-color: #f7f7f7; }
 
+.nav {
+  position: fixed;
+  width: 100%;
+  z-index: 1; }
+
 .social {
   background-color: #fff;
   float: right; }
@@ -665,7 +670,8 @@ header {
   -ms-justify-content: space-around;
   -o-justify-content: space-around;
   justify-content: space-around;
-  -ms-flex-pack: distribute; }
+  -ms-flex-pack: distribute;
+  padding-top: 127px; }
 
 .card {
   background: white;
