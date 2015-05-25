@@ -1,4 +1,4 @@
-times a tweet speaks louder than words
+Sometimes a tweet speaks louder than words
 
 ![tweet](http://i.imgur.com/M8H9Mwn.png)
 
