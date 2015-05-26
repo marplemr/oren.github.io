@@ -1,9 +1,14 @@
 #!/bin/sh
 
-if [ $1 ]; then
-  cp before.html $1.html
-  marked $1.md >> $1.html
-  cat after.html >> $1.html
+
+# cut last 3 chars to remove the '.md'
+n=3
+file=$(echo $1 | sed "s/\(.*\).\{$n\}/\1/")
+
+if [ $file ]; then
+  cp before.html $file.html
+  marked $file.md >> $file.html
+  cat after.html >> $file.html
 else
   echo please provide filename without extention. for example: ./convert modular
 fi
