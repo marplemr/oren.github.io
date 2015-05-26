@@ -2,7 +2,7 @@
 
 (This is a summary of [this blog post](http://pouchdb.com/2015/05/18/we-have-a-problem-with-promises.html))
 
-Here is a real world promise chain
+Here is a real world promise chain:
 ```js
 login().then(getContacts).then(getAttachments).catch(error);
 ```
@@ -31,7 +31,7 @@ function getContacts(result) {
 }
 ```
 
-3) a function that throws a value
+3) a function that throws
 
 ```js
 function getContacts(result) {

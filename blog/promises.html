@@ -28,7 +28,7 @@
     <article class='markdown-body'>
 <h1 id="promises-basics">Promises Basics</h1>
 <p>(This is a summary of <a href="http://pouchdb.com/2015/05/18/we-have-a-problem-with-promises.html">this blog post</a>)</p>
-<p>Here is a real world promise chain</p>
+<p>Here is a real world promise chain:</p>
 <pre><code class="lang-js">login().then(getContacts).then(getAttachments).catch(error);
 </code></pre>
 <p>What can you do inside the functions <code>getContacts</code> and <code>getAttachments</code>?</p>
@@ -47,7 +47,7 @@
   return result + &#39; I am doing something sync.&#39;;
 }
 </code></pre>
-<p>3) a function that throws a value</p>
+<p>3) a function that throws</p>
 <pre><code class="lang-js">function getContacts(result) {
   throw new Error(&#39;user logged out!&#39;);
 }
