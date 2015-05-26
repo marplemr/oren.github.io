@@ -1,4 +1,5 @@
 $active-tab: rgb(250, 64, 198)
+$non-active-tab: #aaa
 
 .post
   article
@@ -6,12 +7,12 @@ $active-tab: rgb(250, 64, 198)
     width: 90%
     margin: 0 auto
   .talks-link
-    color: #aaa
+    color: $non-active-tab
     cursor: default
     &:hover
       color: $active-tab
   .blog-link
-    color: #aaa
+    color: $active-tab
     &:hover
       color: $active-tab
   .markdown-body 
