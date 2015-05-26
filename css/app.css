@@ -721,14 +721,11 @@ header {
   width: 90%;
   margin: 0 auto; }
 .post .talks-link {
-  color: #aaa;
-  cursor: default; }
+  color: #aaa; }
   .post .talks-link:hover {
     color: #fa40c6; }
 .post .blog-link {
   color: #fa40c6; }
-  .post .blog-link:hover {
-    color: #fa40c6; }
 .post .markdown-body {
   min-width: 200px;
   max-width: 790px;
@@ -737,6 +734,26 @@ header {
   .post .markdown-body ul {
     list-style: disc; }
   .post .markdown-body ol {
+    list-style: decimal; }
+
+.talk article {
+  padding-top: 127px;
+  width: 90%;
+  margin: 0 auto; }
+.talk .talks-link {
+  color: #fa40c6; }
+.talk .blog-link {
+  color: #aaa; }
+  .talk .blog-link:hover {
+    color: #fa40c6; }
+.talk .markdown-body {
+  min-width: 200px;
+  max-width: 790px;
+  margin: 0 auto;
+  padding: inherit 30px 30px 30px; }
+  .talk .markdown-body ul {
+    list-style: disc; }
+  .talk .markdown-body ol {
     list-style: decimal; }
 
 body {
