@@ -723,6 +723,7 @@ header {
 
 .post article {
   padding-top: 127px;
+  padding-bottom: 20px;
   width: 90%;
   margin: 0 auto; }
 .post .talks-link {
@@ -743,6 +744,7 @@ header {
 
 .talk article {
   padding-top: 127px;
+  padding-bottom: 20px;
   width: 90%;
   margin: 0 auto; }
 .talk .talks-link {
