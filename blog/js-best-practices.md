@@ -1,0 +1,46 @@
+# JavaScript Best Practices
+
+This Post is a place for me to gather tips for writing better Javascript.
+
+### Don't use a constructor function.
+
+"JavaScript built-ins started out using constructors because Brendan Eich was told to make it look like Java."
+
+### Don't use the new keyword.
+
+### Don't use instanceof.
+
+### Don't use ES6 'class' keyword.
+
+"That’s like driving your Tesla Model S to a car dealership and trading it in for a rusted out 1983 Ford Pinto."
+
+If you want to add functionality to an object while reusing that code, use a **Object.create**. The result of .create() is called a delegate prototype.
+Here a doctor needs to draw blood so we are adding him this ability. We can also add it to a nurse etc.. 
+```js
+let drawBlood = {
+  access: 'waitingRoom',
+  
+  draw () {
+    return `${this.name}, ${specialty}, draws blood.`;
+  }
+};
+ 
+// drawBlood is a delegate prototype
+// doctor is is an instace
+let doctor = Object.assign(Object.create(drawBlood), {
+  name: 'josh',
+  access: 'MedicalRecords',
+  specialty: 'oncologist'
+
+  prescribe (drug) {
+    return `${this.name}, ${specialty}, prescribe ${drug}.`;
+  }
+});
+
+doctor.prescribe('tylenol');
+doctor.drawBlood();
+```
+
+### References
+
+* https://medium.com/javascript-scene/common-misconceptions-about-inheritance-in-javascript-d5d9bab29b0a
