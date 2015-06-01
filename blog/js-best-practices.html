@@ -51,6 +51,7 @@ let doctor = Object.assign(Object.create(drawBlood), {
   access: &#39;MedicalRecords&#39;,
   specialty: &#39;oncologist&#39;
 
+  // a short-hand way to declare a function within an object literal
   prescribe (drug) {
     return `${this.name}, ${specialty}, prescribe ${drug}.`;
   }
