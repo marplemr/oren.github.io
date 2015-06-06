@@ -27,17 +27,15 @@
 
     <article class='markdown-body'>
 <h1 id="evolution-of-a-microservice">Evolution of a Microservice</h1>
-<p><img src="images/evolution-of-microservice-large.png" alt="evolution"></p>
+<p><img src="images/evolution-of-microservice-large.gif" alt="evolution"></p>
 <ol>
-<li>Write code</li>
-<li>Detect a need for a function</li>
-<li>Move it around to make the code more readable</li>
-<li>Create a CommonJS module (require that file)</li>
-<li>Move the function to it&#39;s own Git repo</li>
-<li>Publish to NPM</li>
-<li>Put it behind HTTP Service</li>
+<li>Write a function.</li>
+<li>Put it in a separate file and expose it as a CommonJS module.</li>
+<li>Move the function to it&#39;s own Git repo.</li>
+<li>Publish to NPM.</li>
+<li>Put it behind HTTP Service.</li>
 </ol>
-<p>Most of the time you don&#39;t continue beyond step 4. If the function needs to be shared with other projects, move it to it&#39;s own Git repo. Do you need semantic versioning? publish it to NPM. Do you want to consume it over HTTP? set up an HTTP service in front of it.</p>
+<p>Most of the time you don&#39;t continue beyond step 2. If the function needs to be shared with other projects, move it to it&#39;s own Git repo. Do you need semantic versioning? publish it to NPM. Do you want to consume it over HTTP? set up an HTTP service in front of it.</p>
 
     </article>
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
