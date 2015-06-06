@@ -10,5 +10,5 @@ if [ $file ]; then
   marked $file.md >> $file.html
   cat after.html >> $file.html
 else
-  echo please provide filename without extention. for example: ./convert modular
+  echo please provide filename without extention. for example: ./convert modular.md
 fi
