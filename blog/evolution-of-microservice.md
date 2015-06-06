@@ -1,6 +1,6 @@
 # Evolution of a Microservice
 
-![evolution](images/evolution-of-microservice-large.gif)
+![evolution](images/evolution.gif)
 
 1. Write a function.
 1. Put it in a separate file and expose it as a CommonJS module.
