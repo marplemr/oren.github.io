@@ -12,3 +12,5 @@ User Flow
 1. Julie enter her user/password and the auth server redirect to app.my-server.com/auth?identity_token=233224&something_else=554535
 
 https://tools.ietf.org/html/rfc6749#section-4.2
+https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2
+http://stackoverflow.com/questions/4727226/on-a-high-level-how-does-oauth-2-work
