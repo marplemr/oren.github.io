@@ -1,3 +1,9 @@
+I would like to re-write this function and make it more idiomatic js.
+Sorella on the irc chat told me to use dynamic dispatch:
+
+> so you have that in your send function, but then you've got this if (data.whatever) { send(whatever) } blocks, where instead of letting JS figure out the right operation for you, you're doing the job yourself and selecting which operation should run based on some predicates
+
+// version 1
 function sendNotification (soId, data) {
   var header;
 
@@ -36,6 +42,9 @@ function sendNotification (soId, data) {
   return;
 }
 
+// version 2: dynamic dispatch
+
+var data = {fooo baraueaeou ueaoueo}
 
 var emailManagers = {
   handle: function(){ email rebbeka }
@@ -52,6 +61,8 @@ var emailDoctors = {
 var emailSponsor = { some data from the mobile app };
 var send = function(ev){ ev.handle() };
 
+send(
+
 if (date.adverseEvent) {
   send(emailManagers);
   return;
@@ -66,3 +77,5 @@ if (!data.foobar) {
   send(emailDoctors);
   return;
 }
+
+He didn't elaborate about the exact way to implement it. I think I am not suppose to use the if statements above but I am not sure how to refactor it. any suggestions?
