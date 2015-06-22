@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+    <title>Oren's Website - Docker Crash Course</title>
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/github-markdown.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css">
+  </head>
+  <body class='post'>
+
+    <div id='header-wrap'>
+      <div id='header' class='clear'>
+        <div class='social'>
+          <a href="https://www.twitter.com/oreng" target="_blank" class="twitter"></a>
+          <a href="https://www.linkedin.com/in/orengolan" target="_blank" class="linkedin"></a>
+          <a href="https://www.github.com/oren" target="_blank" class="github"></a>
+        </div>
+
+        <header>
+          <a href="/" class='talks-link'>Talks</a>
+          <a href="../blog" class='blog-link'>Blog</a>
+        </header>
+      </div>
+    </div>
+
+    <article class='markdown-body'>
+<h2 id="create-a-github-repo-in-one-command">Create a Github Repo in One Command</h2>
+<p><img src="http://teamquadx.org/img/gitHub.png" alt="github"></p>
+<p>I use a single command to create my git repositories:</p>
+<pre><code class="lang-bash">git-new my-new-git-repo
+</code></pre>
+<p>It&#39;s a simple bash script. Here are the steps to create it:</p>
+<pre><code class="lang-bash">touch git-new &amp;&amp; chmod 755 git-new
+</code></pre>
+<p>Locate this file somewhere on your path.</p>
+<p>Add the following lines to the git-new script:</p>
+<pre><code class="lang-bash">#!/bin/bash
+
+# create a new repo on github
+# usage: git-new &lt;repo name&gt;
+
+set -e
+
+name=$1
+
+if [ &quot;$1&quot; ]; then
+  mkdir &quot;$name&quot;
+  cd &quot;$name&quot;
+  echo &quot;# $name&quot; &gt; readme.md
+  git init
+  git add readme.md
+  git commit -m &#39;first commit&#39;
+  git hub repo-new &quot;$name&quot;
+  remote=$(git hub repo &quot;$name&quot; | grep URL | awk &#39;{print $3}&#39;)
+  git remote add origin &quot;$remote&quot;
+  git push origin master
+else
+  echo provide a repo name
+fi
+</code></pre>
+<p>You&#39;ll notice that I use <code>git hub</code>. This is a <a href="https://github.com/ingydotnet/git-hub">repository</a> of bash scripsts that use github API so you won&#39;t need to use your web browser to interact with Github (create, fork, clone etc).
+Here is how to set it up:</p>
+<pre><code class="lang-bash">git clone https://github.com/ingydotnet/git-hub ~/projects/git-hub
+echo &quot;source ~/projects/git-hub/init&quot; &gt;&gt; ~/.bashrc
+</code></pre>
+<p>That&#39;s it! Go ahead and try <code>git-new my-awesome-project</code> and notice a new project was created on github.</p>
+
+    </article>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../javascript/main.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
