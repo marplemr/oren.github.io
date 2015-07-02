@@ -741,6 +741,9 @@ header {
     list-style: disc; }
   .post .markdown-body ol {
     list-style: decimal; }
+  .post .markdown-body iframe {
+    width: 100%;
+    max-width: 640px; }
 
 .talk article {
   padding-top: 127px;
@@ -762,6 +765,9 @@ header {
     list-style: disc; }
   .talk .markdown-body ol {
     list-style: decimal; }
+  .talk .markdown-body iframe {
+    width: 100%;
+    max-width: 640px; }
 
 body {
   background-color: #EBEBEB; }

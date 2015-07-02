@@ -2,7 +2,8 @@
 
 Presentation at the [SoCal Node.js Meetup](http://www.meetup.com/SoCal-Node-JS/events/221022035)
 
-[![video](https://github.com/oren/docker-crash-course/raw/master/website/pictures/intro.png)](https://www.youtube.com/embed/BgDhf50Ya2s)
+<iframe width="640" height="360" src="https://www.youtube.com/embed/BgDhf50Ya2s?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
 
 (Click on the image above to watch the video of the talk)
 
