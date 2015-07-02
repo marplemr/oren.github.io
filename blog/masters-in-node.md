@@ -1,4 +1,4 @@
-Masters in Node - Presentation by David Guttman
+# Masters in Node - Mad Science by David Guttman
 
 ![masters in node](images/masters-in-node.jpg)
 
