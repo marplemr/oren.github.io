@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+    <title>Oren's Website - Docker Crash Course</title>
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/github-markdown.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css">
+  </head>
+  <body class='post'>
+
+    <div id='header-wrap'>
+      <div id='header' class='clear'>
+        <div class='social'>
+          <a href="https://www.twitter.com/oreng" target="_blank" class="twitter"></a>
+          <a href="https://www.linkedin.com/in/orengolan" target="_blank" class="linkedin"></a>
+          <a href="https://www.github.com/oren" target="_blank" class="github"></a>
+        </div>
+
+        <header>
+          <a href="/" class='talks-link'>Talks</a>
+          <a href="../blog" class='blog-link'>Blog</a>
+        </header>
+      </div>
+    </div>
+
+    <article class='markdown-body'>
+<h2 id="dockrizing-nativescript">Dockrizing NativeScript</h2>
+<p><img src="images/nativescript.jpg" alt="nativescript"></p>
+<p><a href="https://www.nativescript.org">NativeScript</a> is an interesting way to build Android and iOS apps using Javascript.</p>
+<p>Lets look at alternatives:</p>
+<ul>
+<li><strong>Phonegap</strong> uses the DOM. NativeScript uses native UI controls.  </li>
+<li><strong>Xamarin and Titanium</strong> compile C# and JavaScript into Objective-C and Java (respectively). In NativeScript the JavaScript you write is running on your phone.  </li>
+<li><strong>React Native</strong> only compiles to iOS (at the moment) and also it doesn&#39;t provide direct access to native API.</li>
+</ul>
+<p>Here is an example for using the Android native API:</p>
+<pre><code class="lang-js">var file = new java.io.File(path);
+</code></pre>
+<p>NativeScript uses the V8 (and Webkit for iOS and Windows) which injects a few global objects. In the above example <code>java.io.File</code> is one of them. In order to access the Java object, NativeScript uses something called Android JNI which provide a bridge between C++ and Java.
+<code>file</code> is now a proxy object that points to a Java Object.</p>
+<p>Is there any performance pentalty here? yup, but it&#39;s only %10 precent slower than real Native app.</p>
+<p>Two more interesting points about NativeScript:</p>
+<ul>
+<li>NPM and CommonJS friendly - If you use Node.js you will feel at home.</li>
+<li>CSS for styling - You can use regular CSS syntax for styling your UI.</li>
+</ul>
+<p>I wanted to explore NativeScript but I didn&#39;t want to install and configure Java, Android SDK, Ant, etc.. life is too short so I created a Docker container with everything neeeded to run it. <a href="https://github.com/oren/docker-nativescript">Try it</a> and let me know what you think!</p>
+<script type="text/javascript" src="https://asciinema.org/a/dknhnp2bufapfq05q5srkxkwn.js" id="asciicast-23014" async></script>
+
+    </article>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../javascript/main.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
