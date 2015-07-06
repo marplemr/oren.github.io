@@ -29,24 +29,24 @@
 <h2 id="build-mobile-apps-with-dockrized-nativescript">Build Mobile apps with Dockrized NativeScript</h2>
 <p><img src="images/nativescript.jpg" alt="nativescript"></p>
 <p><a href="https://www.nativescript.org">NativeScript</a> is an interesting way to build Android and iOS apps using Javascript.</p>
-<p>Lets look at alternatives:</p>
+<p>Let&#39;s look at some alternatives:</p>
 <ul>
 <li><strong>Phonegap</strong> uses the DOM. NativeScript uses native UI controls.  </li>
-<li><strong>Xamarin and Titanium</strong> compile C# and JavaScript into Objective-C and Java (respectively). In NativeScript the JavaScript you write is running on your phone.  </li>
-<li><strong>React Native</strong> only compiles to iOS (at the moment) and also it doesn&#39;t provide direct access to native API.</li>
+<li><strong>Xamarin and Titanium</strong> compile C# and JavaScript to Objective-C and Java respectively. In NativeScript the JavaScript you write is running on your phone.  </li>
+<li><strong>React Native</strong> only compiles to iOS (at the moment) and doesn&#39;t provide direct access to the native API.</li>
 </ul>
-<p>Here is an example for using the Android native API:</p>
+<p>Here is an example using the native Android API:</p>
 <pre><code class="lang-js">var file = new java.io.File(path);
 </code></pre>
-<p>NativeScript uses the V8 (and Webkit for iOS and Windows) which injects a few global objects. In the above example <code>java.io.File</code> is one of them. In order to access the Java object, NativeScript uses something called Android JNI which provide a bridge between C++ and Java.
-<code>file</code> is now a proxy object that points to a Java Object.
-Is there any performance pentalty here? yup, but it&#39;s only %10 precent slower than real Native app.</p>
+<p>NativeScript uses the V8 (and Webkit for iOS and Windows) which injects a few global objects. In the above example, <code>java.io.File</code> is one of them. In order to access Java objects, NativeScript uses something called Android JNI which provides a bridge between C++ and Java.
+<code>file</code> then becomes a proxy object that points to a Java Object.
+Is there any performance penalty here? Indeed, but it&#39;s only %10 precent slower than native applications.</p>
 <p>Two more interesting points about NativeScript:</p>
 <ul>
-<li>NPM and CommonJS friendly - If you use Node.js you will feel at home.</li>
-<li>CSS for styling - You can use regular CSS syntax for styling your UI.</li>
+<li>NPM and CommonJS friendly - if you use Node.js you will feel at home.</li>
+<li>CSS for styling - you can use regular CSS syntax for styling your UI.</li>
 </ul>
-<p>I wanted to explore NativeScript but I didn&#39;t want to install and configure Java, Android SDK, Ant, etc.. life is too short so I created a Docker container with everything needed to run it.</p>
+<p>I wanted to explore NativeScript but didn&#39;t want to install and configure Java, Android SDK, Ant, etc. Life is too short so I created a Docker container with everything needed to run it.</p>
 <p><a href="https://github.com/oren/docker-nativescript">Try it</a> and let me know what you think!</p>
 <p><img src="https://raw.githubusercontent.com/oren/docker-nativescript/master/demo-video.gif" alt="demo-video"></p>
 
