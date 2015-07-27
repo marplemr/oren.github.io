@@ -7,7 +7,7 @@ Let's get started. all you need is to install the CLI (called convox) and than t
 ![pic](images/convox.png)
 
 That's all you need to run your your apps and services. Let's deploy a ruby web app with Redis and PostgreSOL:
-```
+``` bash
 git clone git@github.com:convox-examples/sinatra.git
 cd sinatra
 convox apps create
@@ -26,7 +26,7 @@ Behind the scenes convox is doing the following:
 Deploying a new version is just a matter of running the `deploy` again.
 
 What if you want to scale your app and have 3 instances of it running?
-```
+``` bash
 convox scale --count 3
 ```
 Here is how it looks like:

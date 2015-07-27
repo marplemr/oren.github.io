@@ -31,11 +31,12 @@
 <p>Let&#39;s get started. all you need is to install the CLI (called convox) and than than run <code>convox install</code>. Wait 5 minutes and your AWS looks like this:</p>
 <p><img src="images/convox.png" alt="pic"></p>
 <p>That&#39;s all you need to run your your apps and services. Let&#39;s deploy a ruby web app with Redis and PostgreSOL:</p>
-<pre><code>git clone git@github.com:convox-examples/sinatra.git
+<pre><code class="lang-bash">git clone git@github.com:convox-examples/sinatra.git
 cd sinatra
 convox apps create
 convox deploy
-</code></pre><p>After a minute you&#39;ll see a URL of your new app. You can point your DNS to this host to have nice URL (something like app1.my-server.com).
+</code></pre>
+<p>After a minute you&#39;ll see a URL of your new app. You can point your DNS to this host to have nice URL (something like app1.my-server.com).
 Behind the scenes convox is doing the following:</p>
 <ul>
 <li>Create an ELB for your app (ports 80 and 443)</li>
@@ -47,8 +48,9 @@ Behind the scenes convox is doing the following:</p>
 </ul>
 <p>Deploying a new version is just a matter of running the <code>deploy</code> again.</p>
 <p>What if you want to scale your app and have 3 instances of it running?</p>
-<pre><code>convox scale --count 3
-</code></pre><p>Here is how it looks like:
+<pre><code class="lang-bash">convox scale --count 3
+</code></pre>
+<p>Here is how it looks like:
 <img src="images/convox.png" alt="pic"></p>
 <p>convox is not the only player in the Docker management world. There are others such as Deis, Flynn, Kubernetes, and Docker Swarm. The beauty of convox is it&#39;s usage of battle tested building blocks - instead of using CoreOS, fleet, etcd and custom schedulers it uses EC2, S3, ELB, Auto Scaling group, EC2 Container Service, DynamoDB, and other familiar friends. The downside might be the coupling to Amazon&#39;s platform. But if that&#39;s your poison, you&#39;ll feel right at home with convox.</p>
 <p>A good indicator of a healthy open source project is the speed it takes to ramp up new contributors and the friendliness of it&#39;s community. Issues are being responded within mintues and there is a slack channel where the core team hang out. It only took me a few hours to add support for dedicated EC2 (a requirement for <a href="https://en.wikipedia.org/wiki/Health_Insurance_Portability_and_Accountability_Act">HIPAA</a>).</p>
