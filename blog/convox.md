@@ -21,9 +21,9 @@ Here is what happend behind the scenes:
 Deploying a new version is just a matter of running the  `deploy` again.
 It will gzip the folder to your cluster, build an image, upload it to it's private docker registry (stored on S3), pull the image and run it on an EC2 and gracefully shutdown the old containers.
 
-What if you want to scale your app and have it running on 5 instances?
+What if you want to scale your app and have 3 instances of it running?
 ```
-convox scale --count 5
+convox scale --count 3
 ```
 
 The beauty of Cronox is it's usage of battle tested building blocks - instead of using Fleet, Etcd and custom schedulers it uses EC2, S3, ELB, Auto Scaling group, EC2 Container Service, DynamoDB and other familiar friends.
