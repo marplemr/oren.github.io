@@ -34,8 +34,10 @@ Here is how it looks like:
 
 convox is not the only player in the Docker management world. There are others such as Deis, Flynn, Kubernetes, and Docker Swarm. The beauty of convox is its usage of battle tested building blocks - instead of using CoreOS, fleet, etcd and custom schedulers it uses EC2, S3, ELB, Auto Scaling group, EC2 Container Service, DynamoDB, and other familiar friends. The downside might be the coupling to Amazon's platform. But if that's your poison, you'll feel right at home with convox.
 
-A good indicator of a healthy open source project is the speed it takes to ramp up new contributors and the friendliness of it's community. Issues are being responded within mintues and there is a slack channel where the core team hang out. It only took me a few hours to add support for dedicated EC2 (a requirement for [HIPAA](https://en.wikipedia.org/wiki/Health_Insurance_Portability_and_Accountability_Act)).
+A good indicator of a healthy open source project is the speed it takes to ramp up new contributors and the friendliness of it's community. It only took me a few hours to add support for dedicated EC2 (a requirement for [HIPAA](https://en.wikipedia.org/wiki/Health_Insurance_Portability_and_Accountability_Act)).
 
 [![tweet](images/tweet.png)](https://twitter.com/goconvox/status/625218176775790592)
+
+Issues are being responded within mintues and there is a slack channel where the core team hang out. Email [David]( david@convox.com) to get an invite or ask any questions.
  
 *Thanks [@cyx](https://twitter.com/cyx) for telling me about this project and destroying my weekend*
