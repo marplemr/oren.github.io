@@ -1,36 +1,41 @@
 ## Your own Heroku in 5 minutes
 
-[Convox](http://www.convox.com) is an open source project started by 3 ex-heroku engineers with the goal of having your own Heroku-like setup running on AWS. It follows the [12 factor app](http://12factor.net) that not surprisingly was written by one of Heroku's founders.
+[convox](http://www.convox.com) is an open source project started by 3 ex-Heroku engineers with the goal of having your own Heroku-like setup running on AWS. It follows [The 12-Factor App](http://12factor.net) that not surprisingly was written by one of Heroku's founders.
 
-Let's get started. Install the cli (called convox) and than run `convox install`. 5 minutes later and you get something like this:
+Let's get started. all you need is to install the CLI (called convox) and than than run `convox install`. Wait 5 minutes and your AWS looks like this:
 
-![pic](images/convox.jpg)
+![pic](images/convox.png)
 
-That's all you need to run your your apps and services. Let's deploy a ruby web app with redis and postgres:
+That's all you need to run your your apps and services. Let's deploy a ruby web app with Redis and PostgreSOL:
 ```
 git clone git@github.com:convox-examples/sinatra.git
 cd sinatra
 convox apps create
 convox deploy
 ```
-After a minute you'll see a url of your new app. You can point your DNS to this host to have app.my-server.com
-Here is what happend behind the scenes:
+After a minute you'll see a URL of your new app. You can point your DNS to this host to have nice URL (something like app1.my-server.com).
+Behind the scenes convox is doing the following:
 
-![pic](images/convox-new-app.jpg)
+* Create an ELB for your app (ports 80 and 443)
+* Gzip your local folder to one of the EC2s
+* Build an image
+* Upload it to it's private docker registry (stored on S3)
+* Pull the image and run it on an EC2
+* Register the EC2 with the ELB
 
-Deploying a new version is just a matter of running the  `deploy` again.
-It will gzip the folder to your cluster, build an image, upload it to it's private docker registry (stored on S3), pull the image and run it on an EC2 and gracefully shutdown the old containers.
+Deploying a new version is just a matter of running the `deploy` again.
 
 What if you want to scale your app and have 3 instances of it running?
 ```
 convox scale --count 3
 ```
+Here is how it looks like:
+![pic](images/convox.png)
 
-The beauty of Cronox is it's usage of battle tested building blocks - instead of using Fleet, Etcd and custom schedulers it uses EC2, S3, ELB, Auto Scaling group, EC2 Container Service, DynamoDB and other familiar friends.
+convox is not the only player in the Docker management world. There are others such as Deis, Flynn, Kubernetes, and Docker Swarm. The beauty of convox is it's usage of battle tested building blocks - instead of using CoreOS, fleet, etcd and custom schedulers it uses EC2, S3, ELB, Auto Scaling group, EC2 Container Service, DynamoDB, and other familiar friends. The downside might be the coupling to Amazon's platform. But if that's your poison, you'll feel right at home with convox.
 
-A good indicator of a healty open source project is the speed it takes to ramp up new contributers and the friendliness of it's community.
-It took me a few hours to add support for dedicated EC2, a requiremnt for [HIPAA](https://en.wikipedia.org/wiki/Health_Insurance_Portability_and_Accountability_Act) 
+A good indicator of a healthy open source project is the speed it takes to ramp up new contributors and the friendliness of it's community. Issues are being responded within mintues and there is a slack channel where the core team hang out. It only took me a few hours to add support for dedicated EC2 (a requirement for [HIPAA](https://en.wikipedia.org/wiki/Health_Insurance_Portability_and_Accountability_Act)).
 
-![tweet](images/tweet.png)
-
-And hanks [Cyril](https://twitter.com/cyx) for telling me about this project and destroying my weekend!
+[![tweet](images/tweet.png)](https://twitter.com/goconvox/status/625218176775790592)
+ 
+*Thanks [@cyx](https://twitter.com/cyx) for telling me about this project and destroying my weekend*
