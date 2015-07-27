@@ -30,7 +30,7 @@ What if you want to scale your app and have 3 instances of it running?
 convox scale --count 3
 ```
 Here is how it looks like:
-![pic](images/convox.png)
+![pic](images/convox-new-app.png)
 
 convox is not the only player in the Docker management world. There are others such as Deis, Flynn, Kubernetes, and Docker Swarm. The beauty of convox is its usage of battle tested building blocks - instead of using CoreOS, fleet, etcd and custom schedulers it uses EC2, S3, ELB, Auto Scaling group, EC2 Container Service, DynamoDB, and other familiar friends. The downside might be the coupling to Amazon's platform. But if that's your poison, you'll feel right at home with convox.
 
