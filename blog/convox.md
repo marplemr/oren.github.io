@@ -38,6 +38,6 @@ A good indicator of a healthy open source project is the speed it takes to ramp 
 
 [![tweet](images/tweet.png)](https://twitter.com/goconvox/status/625218176775790592)
 
-Issues are being responded within mintues and there is a slack channel where the core team hang out. Email [David](david@convox.com) to get an invite or ask any questions.
+Issues are being responded within mintues and there is a slack channel where the core team hang out. Email [David](mailto:david@convox.com) to get an invite or ask any questions.
  
 *Thanks [@cyx](https://twitter.com/cyx) for telling me about this project and destroying my weekend*
