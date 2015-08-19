@@ -1,6 +1,6 @@
 ## Create a Github Repo in One Command
 
-![github](http://teamquadx.org/img/gitHub.png)
+![github](https://scan.coverity.com/assets/GitHub-Mark-32px-118dd57243de3bb50984e51a14f61522.png)
 
 I use a single command to create my git repositories:
 
