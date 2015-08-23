@@ -1,4 +1,4 @@
-# Titan Database with Node.js
+# Getting started with Titan Database and Node.js
 
 ![Gremlin](http://tinkerpop.incubator.apache.org/images/tinkerpop3-splash.png)
 
