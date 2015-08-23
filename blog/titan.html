@@ -31,7 +31,9 @@
 <p>This is a getting started guide for running <a href="http://thinkaurelius.github.io/titan">Titan</a> graph database using Node.js and <a href="http://tinkerpop.incubator.apache.org/">Gremlin</a>.</p>
 <p>What is Gremlin? a few open source tools that helps you interact with graph databases. It allows you to avoid lock-in by switching seamlessly between different graph databases. Neo4j, Titan, OrientDB, and ArangoDB all support Gremlin. The Gremlin tools that you probably care about are the query language (the green gremlin) and the HTTP server (called Rexster, that&#39;s the yellow dog).</p>
 <h2 id="run-titan">Run Titan</h2>
-<p><code>git clone https://github.com/oren/titan.git</code><br><code>cd titan</code><br><code>bin/run</code></p>
+<p><code>git clone https://github.com/oren/titan.git</code>
+<code>cd titan</code>
+<code>bin/run</code></p>
 <p>   Runs 3 Docker containers: Titan, ElasticSearch, (Indexing) and Cassandra (Storage). Port 8182 is running the HTTP server.</p>
 <p>(Note - You need to have docker installed. If you are on Mac you&#39;ll need to modify index.js to use the IP you get from  boot2docker or docker-machine.)</p>
 <h2 id="interact-with-the-database">Interact with the Database</h2>
@@ -74,6 +76,11 @@
 }
 </code></pre>
 <p>This code uses <a href="https://github.com/jbmusso/grex">grex</a>, the <a href="https://github.com/tinkerpop/rexster/wiki">Rexster</a> client for Node.js. It&#39;s a <code>request</code> package wrapper that addes a few higher level functions.</p>
+<p>The following lines were all we needed to create two vertices and an edge:</p>
+<pre><code class="lang-js">var bob = query.var(g.addVertex({ name: &#39;Bob&#39; }));
+var alice = query.var(g.addVertex({ name: &#39;Alice&#39; }));
+query(g.addEdge(bob, alice, &#39;likes&#39;, { since: &#39;now&#39; }));
+</code></pre>
 <h2 id="resources">Resources</h2>
 <ul>
 <li><a href="http://s3.thinkaurelius.com/docs/titan/0.9.0-M2">Titan docs</a></li>

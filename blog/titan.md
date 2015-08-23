@@ -8,8 +8,8 @@ What is Gremlin? a few open source tools that helps you interact with graph data
 
 ## Run Titan
 
-`git clone https://github.com/oren/titan.git`  
-`cd titan`  
+`git clone https://github.com/oren/titan.git`
+`cd titan`
 `bin/run`
 
    Runs 3 Docker containers: Titan, ElasticSearch, (Indexing) and Cassandra (Storage). Port 8182 is running the HTTP server.
@@ -66,6 +66,13 @@ let's look at the nodes (also called vertices) in our database:
 ```
 
 This code uses [grex](https://github.com/jbmusso/grex), the [Rexster](https://github.com/tinkerpop/rexster/wiki) client for Node.js. It's a `request` package wrapper that addes a few higher level functions.
+
+The following lines were all we needed to create two vertices and an edge:
+```js
+var bob = query.var(g.addVertex({ name: 'Bob' }));
+var alice = query.var(g.addVertex({ name: 'Alice' }));
+query(g.addEdge(bob, alice, 'likes', { since: 'now' }));
+```
 
 ## Resources
 
