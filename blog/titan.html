@@ -31,9 +31,7 @@
 <p>This is a getting started guide for running a <a href="http://thinkaurelius.github.io/titan">Titan</a> graph database using Node.js and <a href="http://tinkerpop.incubator.apache.org/">Gremlin</a>.</p>
 <p>What is Gremlin? A few open source tools that help you interact with graph databases. It allows you to avoid lock-in by switching seamlessly between different graph databases. Neo4j, Titan, OrientDB, and ArangoDB all support it. The Gremlin tools that you probably care about are the query language (the green creature in the picture above) and the HTTP server (called Rexster, that&#39;s the yellow dog).</p>
 <h2 id="run-titan">Run Titan</h2>
-<p><code>git clone https://github.com/oren/titan.git</code>
-<code>cd titan</code>
-<code>bin/run</code></p>
+<p><code>git clone https://github.com/oren/titan.git</code><br><code>cd titan</code><br><code>bin/run</code>  </p>
 <p>Runs 3 Docker containers: Titan, ElasticSearch, (Indexing) and Cassandra (Storage). The HTTP server runs on port 8182.</p>
 <p>(Note - You need to have docker installed. If you are on Mac you&#39;ll need to modify index.js to use the IP you get from  boot2docker or docker-machine.)</p>
 <h2 id="interact-with-the-database">Interact with the Database</h2>
