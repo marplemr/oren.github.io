@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+    <title>Oren's Website - Docker Crash Course</title>
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/github-markdown.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css">
+  </head>
+  <body class='post'>
+
+    <div id='header-wrap'>
+      <div id='header' class='clear'>
+        <div class='social'>
+          <a href="https://www.twitter.com/oreng" target="_blank" class="twitter"></a>
+          <a href="https://www.linkedin.com/in/orengolan" target="_blank" class="linkedin"></a>
+          <a href="https://www.github.com/oren" target="_blank" class="github"></a>
+        </div>
+
+        <header>
+          <a href="/" class='talks-link'>Talks</a>
+          <a href="../blog" class='blog-link'>Blog</a>
+        </header>
+      </div>
+    </div>
+
+    <article class='markdown-body'>
+<h1 id="titan-database-with-node-js">Titan Database with Node.js</h1>
+<p><img src="http://tinkerpop.incubator.apache.org/images/tinkerpop3-splash.png" alt="Gremlin"></p>
+<p>This is a getting started guide for running <a href="http://thinkaurelius.github.io/titan">Titan</a> graph database using Node.js and <a href="http://tinkerpop.incubator.apache.org/">Gremlin</a>.</p>
+<p>What is Gremlin? a few open source tools that helps you interact with graph databases. It allows you to avoid lock-in by switching seamlessly between different graph databases. Neo4j, Titan, OrientDB, and ArangoDB all support Gremlin. The Gremlin tools that you probably care about are the query language (the green gremlin) and the HTTP server (called Rexster, that&#39;s the yellow dog).</p>
+<h2 id="run-titan">Run Titan</h2>
+<p><code>git clone https://github.com/oren/titan.git</code><br><code>cd titan</code><br><code>bin/run</code></p>
+<p>   Runs 3 Docker containers: Titan, ElasticSearch, (Indexing) and Cassandra (Storage). Port 8182 is running the HTTP server.</p>
+<p>(Note - You need to have docker installed. If you are on Mac you&#39;ll need to modify index.js to use the IP you get from  boot2docker or docker-machine.)</p>
+<h2 id="interact-with-the-database">Interact with the Database</h2>
+<p><code>node index.js</code></p>
+<p>let&#39;s look at the nodes (also called vertices) in our database:</p>
+<p><code>curl http://localhost:8182/graphs/graph/vertices</code></p>
+<pre><code class="lang-js">{
+  version: &quot;2.5.0&quot;,
+  results: [
+    {
+    name: &quot;Alice&quot;,
+    _id: 512,
+    _type: &quot;vertex&quot;
+    },
+    {
+    name: &quot;Bob&quot;,
+    _id: 256,
+    _type: &quot;vertex&quot;
+    }
+  ],
+  totalSize: 2,
+  queryTime: 66.634585
+}
+</code></pre>
+<p><code>curl http://localhost:8182/graphs/graph/edges</code></p>
+<pre><code class="lang-js">{
+  version: &quot;2.5.0&quot;,
+  results: [
+    {
+      since: &quot;now&quot;,
+      _id: &quot;ps-74-36d-e8&quot;,
+      _type: &quot;edge&quot;,
+      _outV: 256,
+      _inV: 512,
+      _label: &quot;likes&quot;
+    }
+  ],
+  totalSize: 1,
+  queryTime: 179.556075
+}
+</code></pre>
+<p>This code uses <a href="https://github.com/jbmusso/grex">grex</a>, the <a href="https://github.com/tinkerpop/rexster/wiki">Rexster</a> client for Node.js. It&#39;s a <code>request</code> package wrapper that addes a few higher level functions.</p>
+<h2 id="resources">Resources</h2>
+<ul>
+<li><a href="http://s3.thinkaurelius.com/docs/titan/0.9.0-M2">Titan docs</a></li>
+<li><a href="https://github.com/jbmusso/grex">grex</a> - Rexter client for Node.js</li>
+<li><a href="https://github.com/tinkerpop/rexster/wiki">Rexter documentation</a></li>
+<li><a href="https://github.com/tinkerpop/rexster/wiki/Basic-REST-API">Rexster HTTP endpionts</a></li>
+<li><a href="https://github.com/apobbati/titan-rexster">Docker repository</a></li>
+<li><a href="https://groups.google.com/forum/#!forum/gremlin-users">Gremlin google group</a></li>
+</ul>
+
+    </article>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../javascript/main.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
