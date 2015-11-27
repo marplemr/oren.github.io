@@ -4,7 +4,7 @@ Presentation at [Full Stack Toronto Conference](http://fsto.co)
 
 ![docker-culture](../images/docker-culture-big.png)
 
-* Video - Will be available in December
+* <a href="http://www.youtube.com/watch?v=EwSYMP33n10" target="_blank">Video</a>
 * <a href="http://docker-culture.sanguinebio.com" target="_blank">Slides</a>
 * <a href="http://github.com/oren/docker-culture" target="_blank">Github Repo</a>
 
