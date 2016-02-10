@@ -1,4 +1,4 @@
-# Markdown driven development
+# Markdown Driven Development
 
 Demo of writing tests in a Markdown file to drive your API. I use a command line tool called [Silk](https://github.com/matryer/silk).
 
