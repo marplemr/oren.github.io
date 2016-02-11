@@ -1,3 +1,6 @@
+<meta property="og:title" content="Markdown Driven Development" />
+<meta property="og:image" content="https://s3.amazonaws.com/sanguinebio/sanguine-logo.png" />
+
 # Markdown Driven Development
 
 I always like to start writing an HTTP service with a markdown file that defines the endpoints of my service. Using [Silk](https://github.com/matryer/silk) lets you do that and also turns your markdown into your test file!
