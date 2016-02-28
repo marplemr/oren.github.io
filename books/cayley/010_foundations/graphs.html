@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Running | Cayley Tutorial</title>
+        <title>Examples for graphs | Cayley Tutorial</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.7">
@@ -37,8 +37,10 @@
         
     
     
+    <link rel="next" href="../010_foundations/videos.html" />
     
-    <link rel="prev" href="../010_foundations/install.html" />
+    
+    <link rel="prev" href="../010_foundations/cover.html" />
     
 
         
@@ -47,9 +49,9 @@
         
         
     <div class="book"
-        data-level="1.4"
-        data-chapter-title="Running"
-        data-filepath="010_foundations/run.md"
+        data-level="1.1"
+        data-chapter-title="Examples for graphs"
+        data-filepath="010_foundations/graphs.md"
         data-basepath=".."
         data-revision="Sat Feb 27 2016 22:07:39 GMT-0800 (PST)"
         data-innerlanguage="">
@@ -96,7 +98,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.1" data-path="010_foundations/graphs.html">
+        <li class="chapter active" data-level="1.1" data-path="010_foundations/graphs.html">
             
                 
                     <a href="../010_foundations/graphs.html">
@@ -141,7 +143,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4" data-path="010_foundations/run.html">
+        <li class="chapter " data-level="1.4" data-path="010_foundations/run.html">
             
                 
                     <a href="../010_foundations/run.html">
@@ -194,34 +196,10 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="running-cayley">Running Cayley</h1>
-<p>Create a config file called <code>cayley.cfg</code></p>
-<pre><code>{
-&quot;database&quot;: &quot;bolt&quot;,
-&quot;db_path&quot;: &quot;/tmp/adventure-time&quot;,
-&quot;read_only&quot;: false
-}
-</code></pre><p>Ininitialize and Run the Repl</p>
-<pre><code>cayley init --config=cayley.cfg
-cayley repl --config=cayley.cfg
-</code></pre><p>You should be in the Repl and see this:</p>
-<pre><code>cayley&gt;
-</code></pre><p>Let&apos;s insert some information about Finn into our database:<br>(Finn is a character from the awesome cartoon &apos;Adventure Time&apos;)</p>
-<pre><code>:a character:finn type human .
-:a character:finn name Finn .
-:a character:finn &quot;in love with&quot; character:princess-bubblegum .
-</code></pre><p>Now let&apos;s find out all the characters that Finn is in love with:</p>
-<pre><code>g.V(&quot;character:finn&quot;).Out(&quot;in love with&quot;).All()
-</code></pre><p>You should see something like this:</p>
-<pre><code>****
-id : character:princess-bubblegum
-=&gt; &lt;nil&gt;
------------
-2 Results
-Elapsed time: 0.895006 ms
-</code></pre><p>Yeah! You just inserted two quads into Cayley and run your first query!</p>
-<p>a Quad is a line like <code>character:finn type human .</code>. It&apos;s called a quad since it contain 4 parts. We&apos;ll get to that later. For now go and celebrate your success.</p>
-<p><img src="https://media.giphy.com/media/rOTGSPxvJJY7m/giphy.gif" alt="Finn"></p>
+                        <h1 id="examples-of-graphs">Examples of graphs</h1>
+<p>Visualising the Ubuntu Package Repository</p>
+<p><img src="http://1.bp.blogspot.com/-D4aETrYxFL8/UO4tBzuDxZI/AAAAAAAAFZc/mrezk5uYPIE/s1600/colour_overview_full.png" alt="Visualising the Ubuntu Package Repository"></p>
+<p>(taken from <a href="http://tech-foo.blogspot.se/2013/01/visualising-ubuntu-package-repository.html?m=1" target="_blank">this</a> article)</p>
 
                     
                     </section>
@@ -232,8 +210,10 @@ Elapsed time: 0.895006 ms
         </div>
 
         
-        <a href="../010_foundations/install.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Installing"><i class="fa fa-angle-left"></i></a>
+        <a href="../010_foundations/cover.html" class="navigation navigation-prev " aria-label="Previous page: Foundations"><i class="fa fa-angle-left"></i></a>
         
+        
+        <a href="../010_foundations/videos.html" class="navigation navigation-next " aria-label="Next page: Videos"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
