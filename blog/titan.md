@@ -1,6 +1,6 @@
 # Getting started with Titan Database and Node.js
 
-![Gremlin](http://tinkerpop.incubator.apache.org/images/tinkerpop3-splash.png)
+![Gremlin](https://tinkerpop.incubator.apache.org/images/tinkerpop3-splash.png)
 
 This is a getting started guide for running a [Titan](https://thinkaurelius.github.io/titan) graph database using Node.js and [Gremlin](http://tinkerpop.incubator.apache.org/).
 
@@ -73,7 +73,7 @@ query(g.addEdge(bob, alice, 'likes', { since: 'now' }));
 
 ## Resources
 
-* [Titan docs](http://s3.thinkaurelius.com/docs/titan/0.9.0-M2)
+* [Titan docs](https://s3.thinkaurelius.com/docs/titan/0.9.0-M2)
 * [grex](https://github.com/jbmusso/grex) - Rexter client for Node.js
 * [Rexter documentation](https://github.com/tinkerpop/rexster/wiki)
 * [Rexster HTTP endpionts](https://github.com/tinkerpop/rexster/wiki/Basic-REST-API)

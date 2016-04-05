@@ -1,6 +1,6 @@
 ## Your own Heroku in 5 minutes
 
-[convox](http://www.convox.com) is an open source project started by 3 ex-Heroku engineers with the goal of having your own Heroku-like setup running on AWS. It follows [The 12-Factor App](http://12factor.net) that not surprisingly was written by one of Heroku's founders.
+[convox](https://www.convox.com) is an open source project started by 3 ex-Heroku engineers with the goal of having your own Heroku-like setup running on AWS. It follows [The 12-Factor App](https://12factor.net) that not surprisingly was written by one of Heroku's founders.
 
 Let's get started. all you need is to install the CLI (called convox) and than than run `convox install`. Wait 5 minutes and your AWS looks like this:
 

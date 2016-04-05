@@ -1,6 +1,6 @@
 # Promises Basics
 
-(This is a summary of [this blog post](http://pouchdb.com/2015/05/18/we-have-a-problem-with-promises.html))
+(This is a summary of [this blog post](https://pouchdb.com/2015/05/18/we-have-a-problem-with-promises.html))
 
 Here is a real world promise chain:
 ```js
