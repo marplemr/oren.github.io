@@ -1,5 +1,5 @@
 <meta property="og:title" content="Markdown Driven Development" />
-<meta property="og:image" content="https://s3.amazonaws.com/sanguinebio/sanguine-logo.png" />
+<meta property="og:image" content="http://i.imgur.com/rs8xkzg.png" />
 
 # Markdown Driven Development
 
