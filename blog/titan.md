@@ -2,7 +2,7 @@
 
 ![Gremlin](http://tinkerpop.incubator.apache.org/images/tinkerpop3-splash.png)
 
-This is a getting started guide for running a [Titan](http://thinkaurelius.github.io/titan) graph database using Node.js and [Gremlin](http://tinkerpop.incubator.apache.org/).
+This is a getting started guide for running a [Titan](https://thinkaurelius.github.io/titan) graph database using Node.js and [Gremlin](http://tinkerpop.incubator.apache.org/).
 
 What is Gremlin? A few open source tools that help you interact with graph databases. It allows you to avoid lock-in by switching seamlessly between different graph databases. Neo4j, Titan, OrientDB, and ArangoDB all support it. The Gremlin tools that you probably care about are the query language (the green creature in the picture above) and the HTTP server (called Rexster, that's the yellow dog).
 

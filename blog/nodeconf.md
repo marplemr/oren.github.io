@@ -4,4 +4,4 @@ Sometimes a tweet speaks louder than words
 
 My experience at Nodeconf (5 minutes video)
 
-[![nodeconf video](http://img.youtube.com/vi/XZjO2cqNfH4/0.jpg)](http://www.youtube.com/watch?v=XZjO2cqNfH4)
+[![nodeconf video](https://img.youtube.com/vi/XZjO2cqNfH4/0.jpg)](https://www.youtube.com/watch?v=XZjO2cqNfH4)
