@@ -1,3 +1,6 @@
+<meta property="og:title" content="Graph databases workshop" />
+<meta property="og:image" content="https://oren.github.io/images/graphs.jpg" />
+
 # Graph databases workshop
 
 Workshop at [FOSSASIA Conference](http://2016.fossasia.org), Singapore
