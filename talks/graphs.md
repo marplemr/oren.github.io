@@ -7,9 +7,9 @@ Workshop at [FOSSASIA Conference](http://2016.fossasia.org), Singapore
 
 ![graph databases](../images/graphs.jpg)
 
-* Video - will be available soon
-* <a href="http://oren.github.com/adventure-graphs" target="_blank">Slides</a>
-* <a href="http://github.com/oren/adventure-graphs" target="_blank">Github Repo</a>
+* <a href="https://youtu.be/OUcmuK8YQDI">Video</a>
+* <a href="https://oren.github.com/adventure-graphs">Slides</a>
+* <a href="https://github.com/oren/adventure-graphs">Github Repo</a>
 
 ## Description
 
