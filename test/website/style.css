@@ -1,0 +1,100 @@
+.check {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+  background-image: url('https://sanguinebio.com/images/global/1x-s0f4124c5f9.png');
+  background-position: -18px -199px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 24px;
+  width: 28px;
+  margin: -12px auto 0 auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.checkbox-theme input[type=checkbox] {
+  display: none;
+}
+
+div.checkbox-theme {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-left: 25.58941%;
+  margin-top: 1em;
+}
+
+@media screen and (max-width: 63.9375em) and (min-width: 48em)
+#confirm label {
+    margin-top: 0.7em;
+}
+pre-signupmedia="screen, projection"
+#confirm label {
+    margin: 0 auto 0 auto;
+    display: block;
+}
+
+.checkbox-theme input[type=checkbox] + label {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    border: 1px solid #E4E7E6;
+    -moz-border-radius: 0.25em;
+    -webkit-border-radius: 0.25em;
+    border-radius: 0.25em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #F7F8F9;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    -webkit-transition: background-color 0.2s ease-in-out;
+    -moz-transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+    -webkit-font-smoothing: antialiased;
+    background-color: #2eaae1;
+    border-radius: 0.25em;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-family: "MuseoSans-700", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 0.8125em;
+    font-weight: normal;
+    line-height: 1;
+    padding: 1em 2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
