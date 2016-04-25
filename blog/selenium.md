@@ -5,7 +5,7 @@
 
 Here is a nice flow for automating your user acceptance tests:
 
-1. Fire up [Selinium IDE](https://addons.mozilla.org/en-US/firefox/addon/selenium-ide) (Firefox extension).
+1. Fire up [Selinium IDE] (https://addons.mozilla.org/en-US/firefox/addon/selenium-ide)(Firefox extension).
 1. Record your test
 1. Save as java file
 1. Copy into node.js file
