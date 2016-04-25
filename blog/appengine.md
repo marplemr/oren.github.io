@@ -41,4 +41,4 @@ http://hello-1292.appspot.com
 
 Resources
 
-* My github repository with this code sample - https://github.com/oren/appengine.html
+* My github repository with this code sample - https://github.com/oren/appengine
