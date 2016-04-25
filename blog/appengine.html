@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+    <title>Oren's Website</title>
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/github-markdown.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css">
+    <link rel="icon" type="image/png" href="../favicon.png">
+  </head>
+  <body class='post'>
+
+    <div id='header-wrap'>
+      <div id='header' class='clear'>
+        <div class='social'>
+          <a href="https://www.twitter.com/oreng" target="_blank" class="twitter"></a>
+          <a href="https://www.linkedin.com/in/orengolan" target="_blank" class="linkedin"></a>
+          <a href="https://www.github.com/oren" target="_blank" class="github"></a>
+        </div>
+
+        <header>
+          <a href="/" class='talks-link'>Talks</a>
+          <a href="../blog" class='blog-link'>Blog</a>
+        </header>
+      </div>
+    </div>
+
+    <article class='markdown-body'>
+<p><meta property="og:title" content="Go on App Engine" /></p>
+<meta property="og:image" content="images/appengine-go.png" />
+
+<h1 id="go-on-app-engine">Go on App Engine</h1>
+<p><img src="images/appengine-go.png" alt="appengine"></p>
+<p>This post is the code and repo for official &#39;Hello World&#39; <a href="https://cloud.google.com/appengine/docs/flexible/go/hello-world">tutorial</a></p>
+<p>Download the App Engine SDK for Go</p>
+<pre><code class="lang-bash">wget https://storage.googleapis.com/appengine-sdks/featured/go_appengine_sdk_linux_amd64-1.9.36.zip
+unzip go_appengine_sdk_linux_amd64-1.9.36.zip
+add to .bashrc: export PATH=$PATH:$TMP/apps/go_appengine/
+which goapp
+</code></pre>
+<p>Test the app on your laptop</p>
+<pre><code class="lang-bash">git clone git@github.com:oren/appengine.git
+cd appengine
+goapp serve
+</code></pre>
+<p>Create an app on Google&#39;s dashboard and copy the app id (my app id is hello-1292)</p>
+<pre><code class="lang-bash">https://console.cloud.google.com/home/dashboard
+</code></pre>
+<p>Deploy</p>
+<pre><code class="lang-bash">appcfg.py -A hello-1292 -V v1 update .
+</code></pre>
+<p>Enjoy</p>
+<pre><code class="lang-bash">http://hello-1292.appspot.com
+</code></pre>
+<p><br/></p>
+<p>Resources</p>
+<ul>
+<li>My github repository with this code sample - <a href="https://github.com/oren/appengine.html">https://github.com/oren/appengine.html</a></li>
+</ul>
+
+    </article>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../javascript/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
