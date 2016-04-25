@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+    <title>Oren's Website</title>
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/github-markdown.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css">
+    <link rel="icon" type="image/png" href="../favicon.png">
+  </head>
+  <body class='post'>
+
+    <div id='header-wrap'>
+      <div id='header' class='clear'>
+        <div class='social'>
+          <a href="https://www.twitter.com/oreng" target="_blank" class="twitter"></a>
+          <a href="https://www.linkedin.com/in/orengolan" target="_blank" class="linkedin"></a>
+          <a href="https://www.github.com/oren" target="_blank" class="github"></a>
+        </div>
+
+        <header>
+          <a href="/" class='talks-link'>Talks</a>
+          <a href="../blog" class='blog-link'>Blog</a>
+        </header>
+      </div>
+    </div>
+
+    <article class='markdown-body'>
+<p><meta property="og:title" content="Acceptance tests automation with Selenium and Node.js" /></p>
+<meta property="og:image" content="images/selenium.jpg" />
+
+<h1 id="acceptance-tests-automation-with-selenium-and-node-js">Acceptance tests automation with Selenium and Node.js</h1>
+<p>Here is a nice flow for automating your user acceptance tests:</p>
+<ol>
+<li>Fire up <a href="https://addons.mozilla.org/en-US/firefox/addon/selenium-ide">Selinium IDE</a>(Firefox extension).</li>
+<li>Record your test</li>
+<li>Save as java file</li>
+<li>Copy into node.js file</li>
+<li>Run your node file</li>
+</ol>
+<p>There are a lot of tools that were written on top of selenium to help you write your tests in Node.js/Javascript but I found the offical JavaScript driver - <a href="https://github.com/SeleniumHQ/selenium/wiki/WebDriverJs">WebDriverJs</a> to be enough to get the job done. Here is a 3 minutes video demonstrating it:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kRIz7Gumnik" frameborder="0" allowfullscreen></iframe>
+
+<p><br/>
+<br/></p>
+<p>Code sample - Attempt to signup and take a screenshot of the failure page.</p>
+<pre><code class="lang-js">// npm install selenium-webdriver
+
+var fs = require(&#39;fs&#39;);
+var webdriver = require(&#39;selenium-webdriver&#39;);
+var By = webdriver.By;
+var until = webdriver.until;
+
+var driver = new webdriver.Builder()
+  .forBrowser(&#39;firefox&#39;)
+  .build();
+
+driver.get(&quot;https://my-awesome-website.com&quot;);
+driver.findElement(By.className(&#39;signup-link&#39;)).click();
+driver.findElement(By.css(&quot;label&quot;)).click();
+driver.findElement(By.id(&quot;continue-button&quot;)).click();
+driver.findElement(By.id(&quot;first-name&quot;)).sendKeys(&quot;josh&quot;);
+driver.findElement(By.id(&quot;last-name&quot;)).sendKeys(&quot;felkor&quot;);
+driver.findElement(By.id(&quot;signup-submit&quot;)).click();
+
+driver.takeScreenshot().then(function(data) {
+  writeScreenshot(data, &#39;missing-fields.png&#39;);
+});
+
+var textPromise = driver.findElement(By.id(&quot;signup-submit&quot;)).getText();
+
+textPromise.then(function(text) {
+  if (text === &quot;TRY AGAIN&quot;) {
+    console.log(&quot;success&quot;);
+    process.exit(0);
+    return;
+  } else {
+    console.log(&quot;fail&quot;);
+    process.exit(1);
+  }
+});
+
+function writeScreenshot(data, name) {
+  name = name || &#39;ss.png&#39;;
+  var screenshotPath = &#39;/tmp/&#39;;
+  fs.writeFileSync(screenshotPath + name, data, &#39;base64&#39;);
+};
+</code></pre>
+<p>Resources</p>
+<ul>
+<li>My github repository with this code sample - <a href="https://github.com/oren/selenium">https://github.com/oren/selenium</a></li>
+<li>Official JavaScript Driver - <a href="https://github.com/SeleniumHQ/selenium/wiki/WebDriverJs">https://github.com/SeleniumHQ/selenium/wiki/WebDriverJs</a></li>
+<li>WebDriver Spec - <a href="https://w3c.github.io/webdriver/webdriver-spec.html">https://w3c.github.io/webdriver/webdriver-spec.html</a></li>
+</ul>
+
+    </article>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../javascript/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
