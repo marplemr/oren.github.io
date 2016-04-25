@@ -5,7 +5,7 @@
 
 ![appengine](images/appengine-go.png)
 
-This post is the code and repo for official 'Hello World' [tutorial](https://cloud.google.com/appengine/docs/flexible/go/hello-world)
+This post is the code for the official 'Hello World' [tutorial](https://cloud.google.com/appengine/docs/flexible/go/hello-world).
 
 Download the App Engine SDK for Go
 ```bash
