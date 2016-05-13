@@ -2,9 +2,10 @@
 
 Presentation at [Full Stack Toronto Conference](http://fsto.co)
 
-![docker-culture](../images/docker-culture-big.png)
+<iframe width="640" height="360" src="https://www.youtube.com/embed/EwSYMP33n10?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-* <a href="http://www.youtube.com/watch?v=EwSYMP33n10" target="_blank">Video</a>
+(Click on the image above to watch the video of the talk)
+
 * <a href="http://docker-culture.sanguinebio.com" target="_blank">Slides</a>
 * <a href="http://github.com/oren/docker-culture" target="_blank">Github Repo</a>
 

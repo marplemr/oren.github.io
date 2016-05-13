@@ -5,9 +5,10 @@
 
 Workshop at [FOSSASIA Conference](http://2016.fossasia.org), Singapore
 
-![graph databases](../images/graphs.jpg)
+<iframe width="640" height="360" src="https://www.youtube.com/embed/OUcmuK8YQDI?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-* <a href="https://youtu.be/OUcmuK8YQDI">Video</a>
+(Click on the image above to watch the video of the talk)
+
 * <a href="https://oren.github.com/adventure-graphs">Slides</a>
 * <a href="https://github.com/oren/adventure-graphs">Github Repo</a>
 
