@@ -3,11 +3,9 @@
 
 # Hello World in Go - Remote pair programming party
 
-We had an intereting discussion at the recent LA CTO Forum about the need to keep up with the recent technologies.
-One member, Pradipe, mentioned that many job interviews focus on the hottest languages instead of the core principles of software engineering.
-Hearing that I invited anyone interested to a remote programming party where I can share my love for the Go programming language.
+There was a interesting discussion at the recent LA CTO Forum about companies requiring candidates to know trendy programming languages instead of focusing on core software engineering skills. I decided to invite them to a remote programming party where I can share my love for the the Go programming language.
 
-Pradipe, Kuba, and Sean joined a google hangout session and also connected (ssh) to my server and we worked on the same codebase. Here is the video:
+Pradipe, Kuba, and Sean joined a google hangout session and connected (ssh) to my server where we worked on the same codebase. Here is the video:
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/y9ufkAS6mug?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
