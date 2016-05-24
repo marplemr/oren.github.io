@@ -25,4 +25,5 @@ Here are a few good links that will help you to get started:
 * [Use OKRs to unify](https://www.thinkwithgoogle.com/articles/start-up-speed-kristen-gil.html) (Blog post)
 * [Startup OKRs Template](https://docs.google.com/document/d/1OHpQOvZz76_10ebJP2AKvvXUF3H9yd6FC89F5jS4mks/edit?pli=1#)
 
-*Special thanks for everyone that helped me (you know who you are) and to [David Subar](https://www.linkedin.com/in/davidsubar).*
+Thanks for the helpful advise from the following: [David Subar](https://www.linkedin.com/in/davidsubar), [James Chase](https://www.linkedin.com/in/jameschase), [Kay Lee](https://www.linkedin.com/in/kay-lee-80466013), [Ryan Ogle](https://www.linkedin.com/in/ryan-ogle-ba5b481), [Fredrick Roby](https://www.linkedin.com/in/fredricklroby), and [Dan Teplitsky](https://www.linkedin.com/in/dan-teplitsky-4363263).
+
