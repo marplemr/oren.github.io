@@ -20,7 +20,7 @@ Here are a few good links that will help you to get started:
 * [Google's implementation](http://www.businessinsider.com/googles-ranking-system-okr-2014-1) (blog post and 1 hour video)
 * [Swipely's implementation](http://firstround.com/review/How-to-Make-OKRs-Actually-Work-at-Your-Startup) (Blog post)
 * [Zynga's implementation](http://eleganthack.com/monday-commitments-and-friday-wins) (Blog post)
-* [Zynga's implementation](http://eleganthack.com/the-art-of-the-okr/)(Blog post and 20 min video)
+* [Zynga's implementation](http://eleganthack.com/the-art-of-the-okr/) (Blog post and 20 min video)
 * [Common mistakes](http://eleganthack.com/okr-mistakes-and-how-to-fix-them/) (Blog post)
 * [Use OKRs to unify](https://www.thinkwithgoogle.com/articles/start-up-speed-kristen-gil.html) (Blog post)
 * [Startup OKRs Template](https://docs.google.com/document/d/1OHpQOvZz76_10ebJP2AKvvXUF3H9yd6FC89F5jS4mks/edit?pli=1#)
