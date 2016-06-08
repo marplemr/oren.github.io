@@ -3,6 +3,8 @@
 
 # NodeConf
 
+![nodeconf](images/tent.jpg)
+
 Sometimes a tweet speaks louder than words:
 
 ![tweet](https://i.imgur.com/M8H9Mwn.png)
