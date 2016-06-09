@@ -5,7 +5,7 @@
 <meta name="twitter:creator" content="@oreng">
 <meta name="twitter:image:src" content="https://oren.github.io/images/go.jpg">
 
-# Hello World in Go - Remote pair programming party
+# Hello World in Go - Remote programming party
 
 There was a interesting discussion at the recent LA CTO Forum about companies requiring candidates to know trendy programming languages instead of focusing on core software engineering skills. I decided to invite them to a remote programming party where I can share my love for the the Go programming language.
 

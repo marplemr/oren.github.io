@@ -5,7 +5,7 @@
 <meta name="twitter:creator" content="@oreng">
 <meta name="twitter:image:src" content="https://oren.github.io/images/go.jpg">
 
-# Intro to Docker - Remote pair programming
+# Intro to Docker - Remote programming party
 
 ![docker](http://www.dwmkerr.com/content/images/2016/04/Flow.png)
 
