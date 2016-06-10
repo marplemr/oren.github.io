@@ -1,5 +1,5 @@
-<meta property="og:title" content="Hello World in Go - Remote pair programming party" />
-<meta property="og:image" content="https://oren.github.io/images/go.jpg" />
+<meta property="og:title" content="Intro to Docker - Remote programming party" />
+<meta property="og:image" content="http://www.dwmkerr.com/content/images/2016/04/Flow.png" />
 
 <meta name="twitter:title" content="Hello World in Go - Remote pair programming party">
 <meta name="twitter:creator" content="@oreng">
@@ -10,7 +10,7 @@
 ![docker](http://www.dwmkerr.com/content/images/2016/04/Flow.png)
 
 ## Time
-Sat, Jun 11, 10:00 AM - 10:30 AM
+Sat, Jun 11, 10:00 AM - 10:30 AM PST
 
 ## Where
 Online. Link to the Hangout page -  https://plus.google.com/events/cbcllniorpcio7uvh50csmcg2gk
