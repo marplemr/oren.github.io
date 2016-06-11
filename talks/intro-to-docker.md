@@ -20,3 +20,4 @@ We'll build a Web Service that uses a Database and test it using Docker containe
 
 The session will be recorded on Youtube and available here.
 
+<iframe width="640" height="360" src="https://www.youtube.com/embed/bKJreLAAe74?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
