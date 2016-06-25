@@ -8,9 +8,9 @@
 [Micro](https://github.com/micro/micro) is a set of utilities and libraries that makes it easier to write and manage microservices.
 It was written and maintained by [Asim Aslam](https://twitter.com/chuhnk), a developer from London who is getting help from an enthusiastic community.
 
-A service can be written in any language but it's easier to write it in Go (until ports of Micro will be available in other languages). The services can communicate by passing JSON but [protobuf](https://github.com/google/protobuf) encoding can be more efficient (speed and memory). Also by default the messages are sent over HTTP but a message broker (RabbitMQ, Kafka, NSQ, etc) will be more performant. We use [NATS](https://nats.io) since it's very simple and fast.
+A microservice written for micro can be written in any language but it's easier to write it in Go (until ports of Micro will be available in other languages). For non-Go microservices, there exists the sidecar (an HTTP proxy into the microservice) to handle this situation.  Microservices often typically communicate with JSON but micro uses protobuf encoding by default. Protobufs offer solid serialization capabilities, static types, and can be used to also declare the API of a specific microservice.  By default the messages are sent over HTTP but a message broker (RabbitMQ, Kafka, NSQ, etc) can allow improvements on top of this such as persistence, scalability or reliability. In this case we use [NATS](https://nats.io) since it's very simple, fast and lean. It also has enough functionality to act as transport, broker and registry (the latter due to its broadcast queries). More information can be found at [Asim's blogpost](https://blog.micro.mu/2016/04/11/micro-on-nats.html).
 
-[Johnn Guyen](https://github.com/nii236), an Australian developer, uses Micro to collect and visualize financial instruments (Bitcoin and foreign exchange). I asked him to demo his setup and we recorded it in a 30 minutes video:
+[John Nguyen](https://github.com/nii236), an Australian developer, uses Micro to collect and visualize financial instruments (Bitcoin and foreign exchange). I asked him to demo his setup and we recorded it in a 30 minute video:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/b_Ivq2GYlI4" frameborder="0" allowfullscreen></iframe>
 
