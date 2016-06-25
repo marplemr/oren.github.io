@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+    <title>Oren's Website</title>
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/github-markdown.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css">
+    <link rel="icon" type="image/png" href="../favicon.png">
+  </head>
+  <body class='post'>
+
+    <div id='header-wrap'>
+      <div id='header' class='clear'>
+        <div class='social'>
+          <a href="https://www.twitter.com/oreng" target="_blank" class="twitter"></a>
+          <a href="https://www.linkedin.com/in/orengolan" target="_blank" class="linkedin"></a>
+          <a href="https://www.github.com/oren" target="_blank" class="github"></a>
+        </div>
+
+        <header>
+          <a href="/" class='talks-link'>Talks</a>
+          <a href="../blog" class='blog-link'>Blog</a>
+        </header>
+      </div>
+    </div>
+
+    <article class='markdown-body'>
+<p><meta property="og:title" content="Microservices with Go Micro" /></p>
+<meta property="og:image" content="images/micro.jpg" />
+
+<h1 id="microservices-with-go-micro">Microservices with Go Micro</h1>
+<p><img src="images/micro.jpg" alt="micro"></p>
+<p><a href="https://github.com/micro/micro">Micro</a> is a set of utilities and libraries that makes it easier to write and manage microservices.
+It was written and maintained by <a href="https://twitter.com/chuhnk">Asim Aslam</a>, a developer from London who is getting help from an enthusiastic community.</p>
+<p>A service can be written in any language but it&#39;s easier to write it in Go (until ports of Micro will be available in other languages). The services can communicate by passing JSON but <a href="https://github.com/google/protobuf">protobuf</a> encoding can be more efficient (speed and memory). Also by default the messages are sent over HTTP but a message broker (RabbitMQ, Kafka, NSQ, etc) will be more performant. We use <a href="https://nats.io">NATS</a> since it&#39;s very simple and fast.</p>
+<p><a href="https://github.com/nii236">Johnn Guyen</a>, an Australian developer, uses Micro to collect and visualize financial instruments (Bitcoin and foreign exchange). I asked him to demo his setup and we recorded it in a 30 minutes video:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/b_Ivq2GYlI4" frameborder="0" allowfullscreen></iframe>
+
+<p><br/></p>
+<p>Links:</p>
+<ul>
+<li><a href="https://github.com/micro/micro">Micro</a> - tools for <strong>managing</strong> microservices</li>
+<li><a href="https://github.com/micro/go-micro">Go Micro</a> - libraries for <strong>writing</strong> microservices</li>
+<li><a href="https://github.com/nii236/nii-finance">Git repo of this demo</a></li>
+<li><a href="https://skillsmatter.com/skillscasts/8340-london-go-usergroup#video">Recorded presentation</a> by Asim at the Go London User Group</li>
+<li><a href="http://gokit.io/">Go kit</a> - an alternative framework for managing microservices</li>
+</ul>
+
+    </article>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../javascript/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
