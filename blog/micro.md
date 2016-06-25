@@ -14,6 +14,16 @@ A service can be written in any language but it's easier to write it in Go (unti
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/b_Ivq2GYlI4" frameborder="0" allowfullscreen></iframe>
 
+## Agenda
+
+* [0:00](http://www.youtube.com/watch?v=b_Ivq2GYlI4) Overview of Micro and NATS
+* [8:00](http://www.youtube.com/watch?v=b_Ivq2GYlI4&t=8m00s) Demo
+* [16:17](http://www.youtube.com/watch?v=b_Ivq2GYlI4&t=16m17s) Publishing a message to NATS
+* [23:50](http://www.youtube.com/watch?v=b_Ivq2GYlI4&t=23m50s) Code of a publisher and a subscriber
+* [27:44](http://www.youtube.com/watch?v=b_Ivq2GYlI4&t=27m44s) protobuf
+* [29:03](http://www.youtube.com/watch?v=b_Ivq2GYlI4&t=29m03s) Python subscriber
+* [31:31](http://www.youtube.com/watch?v=b_Ivq2GYlI4&t=31m31s) Persistance with project STAN
+
 <br/>
 
 Links:
