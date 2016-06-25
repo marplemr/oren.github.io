@@ -26,7 +26,7 @@ A service can be written in any language but it's easier to write it in Go (unti
 
 <br/>
 
-Links:
+## Links
 
 * [Micro](https://github.com/micro/micro) - tools for **managing** microservices
 * [Go Micro](https://github.com/micro/go-micro) - libraries for **writing** microservices
