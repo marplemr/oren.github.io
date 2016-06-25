@@ -3,7 +3,7 @@
 
 # Microservices with Go Micro
 
-![micro](images/micro.jpg)
+![micro](images/micro.gif)
 
 [Micro](https://github.com/micro/micro) is a set of utilities and libraries that makes it easier to write and manage microservices.
 It was written and maintained by [Asim Aslam](https://twitter.com/chuhnk), a developer from London who is getting help from an enthusiastic community.
