@@ -29,8 +29,8 @@
 // }
 //
 
-// var host = "oren.github.io"
-var host = "local.oren.com"
+var host = "oren.github.io"
+// var host = "local.oren.com"
 if (window.location.host == host && window.location.protocol != "https:") {
   window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
   // window.location.protocol = "https:"
