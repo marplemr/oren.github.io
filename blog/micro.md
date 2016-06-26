@@ -8,7 +8,7 @@
 [Micro](https://github.com/micro/micro) is a set of utilities and libraries that makes it easier to write and manage microservices.
 It was written and maintained by [Asim Aslam](https://twitter.com/chuhnk), a developer from London who is getting help from an enthusiastic community.
 
-A microservice written for micro can be written in any language but it's easier to write it in Go (until ports of Micro will be available in other languages). For non-Go microservices, there exists the sidecar (an HTTP proxy into the microservice) to handle this situation.
+A microservice written for micro can be written in any language but it's easier to write it in Go (until ports of Micro will be available in other languages). For non-Go microservices, there exists the [Sidecar](https://github.com/micro/micro/tree/master/car) (an HTTP proxy into the microservice) to handle this situation.
 
 Microservices often typically communicate with JSON but micro uses protobuf encoding by default. Protobufs offer solid serialization capabilities, static types, and can be used to also declare the API of a specific microservice.
 
