@@ -1,7 +1,7 @@
-<meta property="og:title" content="Microservices with Go Micro" />
+<meta property="og:title" content="Microservices with Go Micro and NATS" />
 <meta property="og:image" content="images/micro.jpg" />
 
-# Microservices with Go Micro
+# Microservices with Go Micro and NATS
 
 ![micro](images/micro.gif)
 
