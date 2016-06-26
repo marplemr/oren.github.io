@@ -10,7 +10,7 @@ It was written and maintained by [Asim Aslam](https://twitter.com/chuhnk), a dev
 
 A microservice written for micro can be written in any language but it's easier to write it in Go (until ports of Micro will be available in other languages). For non-Go microservices, there exists the [Sidecar](https://github.com/micro/micro/tree/master/car) (an HTTP proxy into the microservice) to handle this situation.
 
-Microservices often typically communicate with JSON but micro uses protobuf encoding by default. Protobufs offer solid serialization capabilities, static types, and can be used to also declare the API of a specific microservice.
+Microservices often typically communicate with JSON but micro uses [protobuf](https://github.com/google/protobuf) encoding by default. Protobufs offer solid serialization capabilities, static types, and can be used to also declare the API of a specific microservice.
 
 By default the messages are sent over HTTP but a message broker (RabbitMQ, Kafka, NSQ, etc) can allow improvements on top of this such as persistence, scalability or reliability. In this case we use [NATS](https://nats.io) since it's very simple, fast and lean. It also has enough functionality to act as transport, broker and registry (the latter due to its broadcast queries). More information can be found at [Asim's blogpost](https://blog.micro.mu/2016/04/11/micro-on-nats.html).
 
