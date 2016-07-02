@@ -3,7 +3,7 @@
 
 # Docker Los Angeles - Lightning Talks
 
-At this month's [Docker Los Angeles Meetup](http://www.meetup.com/Docker-Los-Angeles/events/232148397) we had an hour dedicated for lighting talks. The main rule is you only have 5 minutes. I assumed that there is no need to prepare. What can go wrong in 5 minutes, right? Nope. I was in for a fun ride from the first second of my talk - my laptop's was not even setup properly with the projector...
+At this month's [Docker Los Angeles Meetup](http://www.meetup.com/Docker-Los-Angeles/events/232148397) we had an hour dedicated for lighting talks. Each speaker has only 5 minutes. The talks were very entertaining and insightful. It was a great event filled with passionate techies from the local Docker community.
 
 <iframe width="640" height="480" src="https://www.youtube.com/embed/79RgM83Su6A" frameborder="0" allowfullscreen></iframe>
 
