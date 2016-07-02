@@ -1,7 +1,7 @@
-<meta property="og:title" content="MDocker Los Angeles - lightning talks" />
+<meta property="og:title" content="MDocker Los Angeles - Lightning Talks" />
 <meta property="og:image" content="https://oren.github.io/images/lightning.jpg" />
 
-# Docker Los Angeles - lightning talks
+# Docker Los Angeles - Lightning Talks
 
 At this month's [Docker Los Angeles Meetup](http://www.meetup.com/Docker-Los-Angeles/events/232148397) we had an hour dedicated for lighting talks. The main rule is you only have 5 minutes. I assumed that there is no need to prepare. What can go wrong in 5 minutes, right? Nope. I was in for a fun ride from the first second of my talk - my laptop's was not even setup properly with the projector...
 
