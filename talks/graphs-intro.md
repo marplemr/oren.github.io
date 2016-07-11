@@ -3,9 +3,11 @@
 
 # Introduction to Graph Databases
 
-Presentation at [Big Data LA](http://www.bigdatadayla.com/)
+Presentation at [Big Data Day LA](http://www.bigdatadayla.com)
 
-Video will be available soon
+<iframe width="640" height="480" src="https://www.youtube.com/embed/2FtjAS0HL8A" frameborder="0" allowfullscreen></iframe>
+
+<br/>
 
 * <a href="https://oren.github.com/adventure-graphs">Slides</a>
 * <a href="https://github.com/oren/adventure-graphs">Github Repo</a>
@@ -16,16 +18,16 @@ Many organizations have adopted graph databases - IoT, health care, financial se
 
 ## Agenda
 
-* [](http://www.youtube.com/watch?v=OUcmuK8YQDI) Intro
-* [](http://www.youtube.com/watch?v=OUcmuK8YQDI&t=5m30s) Use cases for graph databases
-* [](http://www.youtube.com/watch?v=OUcmuK8YQDI&t=8m10s) Advantages of graph databases
-* [](http://www.youtube.com/watch?v=OUcmuK8YQDI&t=13m50s) Which graph database is good for me?
-* [](http://www.youtube.com/watch?v=OUcmuK8YQDI&t=30m00s) Play time with Neo4j!
-* [](http://www.youtube.com/watch?v=OUcmuK8YQDI&t=40m20s) Play time with Cayley!
+* [0:00](http://www.youtube.com/watch?v=OUcmuK8YQDI) Introduction
+* [3:20](http://www.youtube.com/watch?v=OUcmuK8YQDI&t=3m20s) Use cases for graph databases
+* [4:57](http://www.youtube.com/watch?v=OUcmuK8YQDI&t=4m57s) Advantages of graph databases
+* [9:43](http://www.youtube.com/watch?v=OUcmuK8YQDI&t=9m43s) Which graph database is good for me?
+* [18:09](http://www.youtube.com/watch?v=OUcmuK8YQDI&t=18m09s) Play time with Neo4j!
+* [19:09](http://www.youtube.com/watch?v=OUcmuK8YQDI&t=19m09s) Play time with Cayley!
 
 ## Cayley related links
 
 * Website - https://cayley.io
+* Forum - https://discourse.cayley.io
 * IRC - [#cayley on freenode](https://webchat.freenode.net/?channels=cayley)
 * Github - https://github.com/cayleygraph/cayley
-
