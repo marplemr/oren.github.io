@@ -1,5 +1,7 @@
 <meta property="og:title" content="Introduction to Graph Databases" />
 <meta property="og:image" content="https://oren.github.io/images/graphs-intro.jpg" />
+<meta name="twitter:description" content="Introduction to Graph Databases">
+<meta name="twitter:image" content="https://oren.github.io/images/graphs-intro.jpg">
 
 # Introduction to Graph Databases
 
