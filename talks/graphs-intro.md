@@ -18,12 +18,12 @@ Many organizations have adopted graph databases - IoT, health care, financial se
 
 ## Agenda
 
-* [0:00](http://www.youtube.com/watch?v=OUcmuK8YQDI) Introduction
-* [3:20](http://www.youtube.com/watch?v=OUcmuK8YQDI&t=3m20s) Use cases for graph databases
-* [4:57](http://www.youtube.com/watch?v=OUcmuK8YQDI&t=4m57s) Advantages of graph databases
-* [9:43](http://www.youtube.com/watch?v=OUcmuK8YQDI&t=9m43s) Which graph database is good for me?
-* [18:09](http://www.youtube.com/watch?v=OUcmuK8YQDI&t=18m09s) Play time with Neo4j!
-* [19:09](http://www.youtube.com/watch?v=OUcmuK8YQDI&t=19m09s) Play time with Cayley!
+* [0:00](http://www.youtube.com/watch?v=2FtjAS0HL8A) Introduction
+* [3:20](http://www.youtube.com/watch?v=2FtjAS0HL8A&t=3m20s) Use cases for graph databases
+* [4:57](http://www.youtube.com/watch?v=2FtjAS0HL8A&t=4m57s) Advantages of graph databases
+* [9:43](http://www.youtube.com/watch?v=2FtjAS0HL8A&t=9m43s) Which graph database is good for me?
+* [18:09](http://www.youtube.com/watch?v=2FtjAS0HL8A&t=18m09s) Play time with Neo4j!
+* [19:09](http://www.youtube.com/watch?v=2FtjAS0HL8A&t=19m09s) Play time with Cayley!
 
 ## Cayley related links
 
