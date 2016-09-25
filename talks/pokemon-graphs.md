@@ -45,7 +45,6 @@ The talk focuses on the realities of working with unfamiliar data and improving 
 
 ## Cayley related links
 
-* Website - https://cayley.io
+* Cayley Repo - https://github.com/cayleygraph/cayley
 * Forum - https://discourse.cayley.io
-* IRC - [#cayley on freenode](https://webchat.freenode.net/?channels=cayley)
-* Github - https://github.com/cayleygraph/cayley
+* IRC chat - [#cayley on freenode](https://webchat.freenode.net/?channels=cayley)
