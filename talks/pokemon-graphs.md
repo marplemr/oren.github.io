@@ -7,16 +7,10 @@
 
 Presentation at [SoCal Data Science Conference](http://socaldatascience.com/)
 
-
-![pic](https://github.com/oren/pokemon/blob/master/pictures/cover.jpg?raw=true)
-
-<!--
-<iframe width="640" height="480" src="https://www.youtube.com/embed/2FtjAS0HL8A" frameborder="0" allowfullscreen></iframe>
--->
+<iframe width="640" height="480" src="https://www.youtube.com/embed/0tyT5EonIeQ" frameborder="0" allowfullscreen></iframe>
 
 <br/>
 
-* Video will be available in a few days
 * <a href="https://github.com/oren/pokemon">Github Repo and Slides</a>
 
 ## Description
@@ -29,19 +23,10 @@ The talk focuses on the realities of working with unfamiliar data and improving 
 
 ## Agenda
 
-* Intro to graph databases
-* Cayley, Quads, and RDF
-* Modeling Pokemon with Cayley
-* Query our data with Cayley
-
-<!--
-* [0:00](http://www.youtube.com/watch?v=2FtjAS0HL8A) Introduction
-* [3:20](http://www.youtube.com/watch?v=2FtjAS0HL8A&t=3m20s) Use cases for graph databases
-* [4:57](http://www.youtube.com/watch?v=2FtjAS0HL8A&t=4m57s) Advantages of graph databases
-* [9:43](http://www.youtube.com/watch?v=2FtjAS0HL8A&t=9m43s) Which graph database is good for me?
-* [18:09](http://www.youtube.com/watch?v=2FtjAS0HL8A&t=18m09s) Play time with Neo4j!
-* [19:09](http://www.youtube.com/watch?v=2FtjAS0HL8A&t=19m09s) Play time with Cayley!
--->
+* [0:00](http://www.youtube.com/watch?v=0tyT5EonIeQ) Intro to graph databases
+* [15:30](http://www.youtube.com/watch?v=0tyT5EonIeQ&t=15m30s) Cayley, Quads, and RDF
+* [22:20](http://www.youtube.com/watch?v=0tyT5EonIeQ&t=22m20s) Modeling Pokemon with Cayley
+* [27:55](http://www.youtube.com/watch?v=0tyT5EonIeQ&t=27m55s) Query our data with Cayley
 
 ## Cayley related links
 
