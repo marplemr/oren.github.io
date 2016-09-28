@@ -23,7 +23,8 @@ The talk focuses on the realities of working with unfamiliar data and improving 
 
 ## Agenda
 
-* [0:00](http://www.youtube.com/watch?v=0tyT5EonIeQ) Intro to graph databases
+* [0:00](http://www.youtube.com/watch?v=0tyT5EonIeQ) Pokemon socks!
+* [2:56](http://www.youtube.com/watch?v=0tyT5EonIeQ&t=2m56s) Intro to graph databases
 * [15:30](http://www.youtube.com/watch?v=0tyT5EonIeQ&t=15m30s) Cayley, Quads, and RDF
 * [22:20](http://www.youtube.com/watch?v=0tyT5EonIeQ&t=22m20s) Modeling Pokemon with Cayley
 * [27:55](http://www.youtube.com/watch?v=0tyT5EonIeQ&t=27m55s) Query our data with Cayley
