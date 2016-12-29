@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+    <title>Oren's Website</title>
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/github-markdown.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css">
+    <link rel="icon" type="image/png" href="../favicon.png">
+  </head>
+  <body class='post'>
+
+    <div id='header-wrap'>
+      <div id='header' class='clear'>
+        <div class='social'>
+          <a href="https://www.twitter.com/oreng" target="_blank" class="twitter"></a>
+          <a href="https://www.linkedin.com/in/orengolan" target="_blank" class="linkedin"></a>
+          <a href="https://www.github.com/oren" target="_blank" class="github"></a>
+        </div>
+
+        <header>
+          <a href="/" class='talks-link'>Talks</a>
+          <a href="../blog" class='blog-link'>Blog</a>
+        </header>
+      </div>
+    </div>
+
+    <article class='markdown-body'>
+<h1 id="don-t-release-zalgo-">Don&#39;t release Zalgo!</h1>
+<p>Here is a short and practical version of Isaac&#39;s post - <a href="http://blog.izs.me/post/59142742143/designing-apis-for-asynchrony">Designing APIs for Asynchrony</a>.<br>Zalgo is a Issac&#39;s nickname for a function that is not predictable. What it means is a function that accepts a callback and sometimes returns it right away, and some other times it returns it after some delay, in the future.</p>
+<p>forEach is an example of a function that returns the passed callback immediately:</p>
+<pre><code class="lang-js">var arr = [1,2,3];
+
+arr.forEach(function (x) {
+  console.log(&#39;first&#39;);
+});
+
+console.log(&#39;last&#39;);
+
+// first first first
+// last
+</code></pre>
+<p>setTimeout calls the callback sometime in the future:</p>
+<pre><code class="lang-js">setTimeout(function () {
+  console.log(&#39;last&#39;)
+}, 1000);
+
+console.log(&#39;first&#39;);
+
+// first
+// last
+</code></pre>
+<p>So when you write a function that accept a callback, make sure your function always sync or always async. don&#39;t mix the two.</p>
+<p>Here is a Zalgo in our codebase.
+This function will return right away if first name or last name is missing but if they exist, it will return sometime in the future with the payload from the login server.</p>
+<pre><code class="lang-js">function register(options, callback) {
+    var first_name = (options[&#39;first_name&#39;] || &#39;&#39;).trim();
+    var last_name = (options[&#39;last_name&#39;] || &#39;&#39;).trim();
+    var errors = [];
+
+    if (!first_name) {
+        errors.push([&#39;first_name&#39;, &#39;Please enter a valid name&#39;]);
+    }
+    if (!last_name) {
+        errors.push([&#39;last_name&#39;, &#39;Please enter a valid name&#39;]);
+    }
+    if (errors.length) {
+        return callback(null, errors);
+    }
+
+    var params = {
+        &#39;user&#39;: {
+            &#39;email&#39;: options[&#39;email&#39;],
+            &#39;first_name&#39;: first_name,
+            &#39;last_name&#39;: last_name,
+            &#39;new_password&#39;: options[&#39;new_password&#39;],
+            &#39;new_password_confirmation&#39;: options[&#39;new_password_confirmation&#39;],
+            &#39;terms&#39;: &#39;1&#39;
+        },
+        &#39;vrid&#39;: options[&#39;vrid&#39;],
+        &#39;merge_history&#39;: options[&#39;merge_history&#39;] || &#39;true&#39;
+    };
+
+    requestWithSignature(&#39;post&#39;, &#39;/api/v2/users&#39;, params, callback);
+}
+</code></pre>
+<p>How to fight a Zalgo when you see one?</p>
+<pre><code class="lang-js">if (errors.length) {
+  process.nextTick(function() {
+    callback(null, errors);
+  });
+  return;
+}
+</code></pre>
+<p><a href="http://nodejs.org/docs/latest/api/process.html#process_process_nexttick_callback">process.nextTick</a> is the way to tell node we want to execute something in the future (the next &#39;tick&#39; of the event loop).
+Now our register function is consistant - it always delays the callback call.</p>
+<p>Two more things: the error should be the first argument and it&#39;s <a href="http://www.devthought.com/2011/12/22/a-string-is-not-an-error/">better to pass an Error object than a string</a>.</p>
+<pre><code class="lang-js">callback(new Error(errors), null);
+</code></pre>
+
+    </article>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../javascript/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
